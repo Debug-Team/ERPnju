@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+<?import com.jfoenix.controls.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.collections.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="750.0" style="-fx-background-color: null;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="main.Presentation.SalesmanUI.CustomerUI.SearchFrame">
+   <children>
+      <AnchorPane layoutX="89.0" layoutY="79.0" prefHeight="295.0" prefWidth="556.0" style="-fx-background-color: rgb(224,103,103);">
+         <children>
+            <TextField fx:id="keyword" layoutX="67.0" layoutY="123.0"  prefHeight="50.0" prefWidth="358.0" />
+            <Button layoutX="165.0" layoutY="219.0" mnemonicParsing="false" onAction="#customerfindsure" onMouseEntered="#buttonEnterEffect" onMouseExited="#buttonExitEffect" onMousePressed="#buttonPressEffect" prefHeight="50.0" prefWidth="88.0" style="-fx-background-color: null;" text="搜索" />
+            <ComboBox fx:id="searchtype" layoutX="431.0" layoutY="119.0" prefHeight="58.0" prefWidth="116.0" style="-fx-background-color: null;" value="客户姓名">
+               <items>
+                  <FXCollections fx:factory="observableArrayList">
+                     <String fx:value="客户姓名" />
+                     <String fx:value="客户编号" />
+                  </FXCollections>
+               </items>
+            </ComboBox>
+            <Button layoutX="303.0" layoutY="219.0" mnemonicParsing="false" onAction="#searchcancel" onMouseEntered="#buttonEnterEffect" onMouseExited="#buttonExitEffect" onMousePressed="#buttonPressEffect" prefHeight="50.0" prefWidth="88.0" style="-fx-background-color: null;" text="取消" />
+         </children>
+      </AnchorPane>
+      <ImageView fitHeight="160.0" fitWidth="148.0" layoutX="22.0" layoutY="14.0" opacity="0.57">
+         <image>
+            <Image url="@../../../../resources/查找.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

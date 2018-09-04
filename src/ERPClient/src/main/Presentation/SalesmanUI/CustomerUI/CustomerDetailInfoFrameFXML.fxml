@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+<?import com.jfoenix.controls.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.collections.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="650.0" prefWidth="1020.0" style="-fx-background-color: null;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="main.Presentation.SalesmanUI.CustomerUI.CustomerdetailInfoFrame">
+   <children>
+      <AnchorPane layoutX="90.0" layoutY="83.0" prefHeight="557.0" prefWidth="912.0" style="-fx-background-color: rgb(224,103,103);">
+         <children>
+            <Label layoutX="48.0" layoutY="53.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="37.0" prefWidth="112.0" text="客户编号：">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+            <TextField fx:id="id" layoutX="173.0" layoutY="51.0" prefHeight="41.0" prefWidth="269.0" style="-fx-background-color: null;">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </TextField>
+            <Label layoutX="49.0" layoutY="110.0" prefHeight="37.0" prefWidth="94.0" text="姓名：">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+            <TextField fx:id="name" layoutX="171.0" layoutY="106.0" prefHeight="41.0" prefWidth="269.0" style="-fx-background-color: null;">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </TextField>
+            <Label layoutX="41.0" layoutY="285.0" prefHeight="37.0" prefWidth="126.0" text="默认业务员：">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+            <TextField fx:id="defaultsalesman" layoutX="170.0" layoutY="283.0" prefHeight="41.0" prefWidth="269.0" style="-fx-background-color: null;">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </TextField>
+            <Label layoutX="45.0" layoutY="334.0" prefHeight="37.0" prefWidth="94.0" text="电话：">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+            <TextField fx:id="number" layoutX="171.0" layoutY="332.0" prefHeight="41.0" prefWidth="269.0" style="-fx-background-color: null;">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </TextField>
+            <Label layoutX="45.0" layoutY="385.0" prefHeight="37.0" prefWidth="94.0" text="地址：">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+            <TextField fx:id="address" layoutX="171.0" layoutY="383.0" style="-fx-background-color: null;">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </TextField>
+            <Label layoutX="49.0" layoutY="434.0" prefHeight="37.0" prefWidth="94.0" text="邮编：">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+            <TextField fx:id="postcode" layoutX="171.0" layoutY="432.0" style="-fx-background-color: null;">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </TextField>
+            <Label layoutX="46.0" layoutY="488.0" prefHeight="37.0" prefWidth="101.0" text="电子邮箱：">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+            <TextField fx:id="email" layoutX="173.0" layoutY="486.0" style="-fx-background-color: null;">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </TextField>
+            <Label layoutX="523.0" layoutY="98.0" prefHeight="37.0" prefWidth="118.0" text="应收额度：">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+            <TextField fx:id="receivelimit" layoutX="641.0" layoutY="96.0" prefHeight="41.0" prefWidth="246.0" style="-fx-background-color: null;">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </TextField>
+            <Label layoutX="547.0" layoutY="162.0" prefHeight="37.0" prefWidth="94.0" text="应收：">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+            <TextField fx:id="receive" layoutX="641.0" layoutY="160.0" prefHeight="41.0" prefWidth="246.0" style="-fx-background-color: null;">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </TextField>
+            <Label layoutX="547.0" layoutY="219.0" prefHeight="37.0" prefWidth="94.0" text="应付：">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+            <TextField fx:id="payment" layoutX="629.0" layoutY="217.0" prefHeight="41.0" prefWidth="246.0" style="-fx-background-color: null;">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </TextField>
+            <Label layoutX="49.0" layoutY="159.0" prefHeight="37.0" prefWidth="94.0" text="类别：">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+            <Label layoutX="49.0" layoutY="213.0" prefHeight="37.0" prefWidth="94.0" text="级别：">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+            <Button layoutX="607.0" layoutY="391.0" mnemonicParsing="false" onAction="#closedetail" onMouseEntered="#buttonEnterEffect" onMouseExited="#buttonExitEffect" onMousePressed="#buttonPressEffect" prefHeight="66.0" prefWidth="112.0" style="-fx-background-color: null;" text="确认">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Button>
+            <Line endY="541.0" layoutX="456.0" layoutY="14.0" startY="-13.0" />
+            <TextField fx:id="category" layoutX="170.0" layoutY="160.0" prefHeight="41.0" prefWidth="269.0" style="-fx-background-color: null;">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </TextField>
+            <TextField fx:id="level" layoutX="171.0" layoutY="211.0" prefHeight="41.0" prefWidth="269.0" style="-fx-background-color: null;">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </TextField>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

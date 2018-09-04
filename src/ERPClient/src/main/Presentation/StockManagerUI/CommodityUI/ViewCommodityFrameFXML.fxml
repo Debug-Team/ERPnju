@@ -1,0 +1,286 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+<?import javafx.collections.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+<?import com.jfoenix.controls.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.collections.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+
+<GridPane alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="720.0" prefWidth="1280.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="main.Presentation.StockManagerUI.CommodityUI.ViewCommodityFrame">
+  <columnConstraints>
+      <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+      <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+      <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+      <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+      <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+      <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+      <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+      <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+      <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+      <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+      <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+      <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+      <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+      <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+      <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+    <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+  </columnConstraints>
+  <rowConstraints>
+      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+  </rowConstraints>
+   <children>
+      <Label text="库存查看" GridPane.columnIndex="2" GridPane.columnSpan="14" GridPane.halignment="CENTER" GridPane.rowSpan="2">
+         <font>
+            <Font size="28.0" />
+         </font>
+      </Label>
+      <GridPane prefHeight="184.0" prefWidth="123.0" style="-fx-background-color: rgb(224,103,103);" GridPane.columnSpan="2" GridPane.rowSpan="18">
+        <columnConstraints>
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+        </columnConstraints>
+        <rowConstraints>
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <Circle fill="WHITE" radius="68.0" stroke="#ffffff00" strokeType="INSIDE" strokeWidth="0.0" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="2" GridPane.valignment="CENTER" />
+            <Button mnemonicParsing="false" onAction="#returnStockManagerHomeHandle" onMouseEntered="#buttonEnterEffect" onMouseExited="#buttonExitEffect" onMousePressed="#buttonPressEffect" style="-fx-background-color: null;" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="14" GridPane.valignment="CENTER">
+               <graphic>
+                  <ImageView fitHeight="40.0" fitWidth="40.0">
+                     <image>
+                        <Image url="@../../../../resources/主界面.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <Button mnemonicParsing="false" onAction="#returnCommodityFrameHandle" onMouseEntered="#buttonEnterEffect" onMouseExited="#buttonExitEffect" onMousePressed="#buttonPressEffect" style="-fx-background-color: null;" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="16" GridPane.valignment="CENTER">
+               <graphic>
+                  <ImageView fitHeight="40.0" fitWidth="40.0">
+                     <image>
+                        <Image url="@../../../../resources/返回.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <Label GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="2" GridPane.valignment="CENTER">
+               <graphic>
+                  <ImageView fx:id="head" fitHeight="136.0" fitWidth="136.0" pickOnBounds="true" preserveRatio="true" />
+               </graphic>
+               <tooltip>
+                  <Tooltip text="用户信息" />
+               </tooltip>
+            </Label>
+         </children>
+      </GridPane>
+      <Line endX="1120.0" GridPane.columnIndex="2" GridPane.columnSpan="14" GridPane.rowIndex="1" GridPane.valignment="BOTTOM" />
+      <AnchorPane prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="2" GridPane.columnSpan="14" GridPane.rowIndex="2" GridPane.rowSpan="16">
+         <children>
+            <DatePicker fx:id="startdate" layoutX="199.0" layoutY="37.0" />
+            <DatePicker fx:id="enddate" layoutX="706.0" layoutY="37.0" />
+            <Label layoutX="84.0" layoutY="37.0" text="起始时间：">
+               <font>
+                  <Font size="23.0" />
+               </font>
+            </Label>
+            <Label layoutX="591.0" layoutY="37.0" text="结束时间：">
+               <font>
+                  <Font size="23.0" />
+               </font>
+            </Label>
+            <TableView fx:id="listintable" layoutX="560.0" layoutY="379.0" prefHeight="211.0" prefWidth="502.0" stylesheets="@../../TableViewCSS.css">
+               <columns>
+                  <TableColumn fx:id="listinnameCol" prefWidth="75.0" text="名称" />
+                  <TableColumn fx:id="listinversionCol" prefWidth="75.0" text="型号" />
+                  <TableColumn fx:id="listinidCol" prefWidth="75.0" text="编号" />
+                  <TableColumn fx:id="listinamountCol" prefWidth="125.0" text="进货数量" />
+                  <TableColumn fx:id="listintotalpriceCol" prefWidth="125.0" text="进货金额" />
+               </columns>
+            </TableView>
+            <TableView fx:id="listouttable" layoutX="560.0" layoutY="129.0" prefHeight="211.0" prefWidth="502.0" stylesheets="@../../TableViewCSS.css">
+               <columns>
+                  <TableColumn fx:id="listoutnameCol" prefWidth="75.0" text="名称" />
+                  <TableColumn fx:id="listoutversionCol" prefWidth="75.0" text="型号" />
+                  <TableColumn fx:id="listoutidCol" prefWidth="75.0" text="编号" />
+                  <TableColumn fx:id="listoutamountCol" prefWidth="125.0" text="销售数量" />
+                  <TableColumn fx:id="listouttotalpriceCol" prefWidth="125.0" text="销售金额" />
+               </columns>
+            </TableView>
+            <TableView fx:id="comouttable" layoutX="58.0" layoutY="129.0" prefHeight="211.0" prefWidth="502.0" stylesheets="@../../TableViewCSS.css">
+               <columns>
+                  <TableColumn fx:id="comoutnameCol" prefWidth="75.0" text="名称" />
+                  <TableColumn fx:id="comoutversionCol" prefWidth="75.0" text="型号" />
+                  <TableColumn fx:id="comoutidCol" prefWidth="75.0" text="编号" />
+                  <TableColumn fx:id="comoutamountCol" prefWidth="125.0" text="出库数量" />
+                  <TableColumn fx:id="comouttotalpriceCol" prefWidth="125.0" text="出库金额" />
+               </columns>
+            </TableView>
+            <TableView fx:id="comintable" layoutX="58.0" layoutY="379.0" prefHeight="211.0" prefWidth="502.0" stylesheets="@../../TableViewCSS.css">
+               <columns>
+                  <TableColumn fx:id="cominnameCol" prefWidth="75.0" text="名称" />
+                  <TableColumn fx:id="cominversionCol" prefWidth="75.0" text="型号" />
+                  <TableColumn fx:id="cominidCol" prefWidth="75.0" text="编号" />
+                  <TableColumn fx:id="cominamountCol" prefWidth="125.0" text="入库数量" />
+                  <TableColumn fx:id="comintotalpriceCol" prefWidth="125.0" text="入库金额" />
+               </columns>
+            </TableView>
+            <Label layoutX="108.0" layoutY="347.0" text="出库总量：" textFill="#e06767">
+               <font>
+                  <Font size="19.0" />
+               </font>
+            </Label>
+            <TextField fx:id="comoutTotalamount" disable="true" editable="false" layoutX="203.0" layoutY="340.0" prefHeight="37.0" prefWidth="90.0" style="-fx-background-color: null;">
+               <font>
+                  <Font size="19.0" />
+               </font>
+            </TextField>
+            <TextField fx:id="comoutSum" disable="true" editable="false" layoutX="395.0" layoutY="340.0" prefHeight="39.0" prefWidth="100.0" style="-fx-background-color: null;">
+               <font>
+                  <Font size="19.0" />
+               </font>
+            </TextField>
+            <Label layoutX="300.0" layoutY="347.0" text="出库总额：" textFill="#e06767">
+               <font>
+                  <Font size="19.0" />
+               </font>
+            </Label>
+            <Label layoutX="300.0" layoutY="594.0" text="入库总额：" textFill="#e06767">
+               <font>
+                  <Font size="19.0" />
+               </font>
+            </Label>
+            <TextField fx:id="cominSum" disable="true" editable="false" layoutX="395.0" layoutY="587.0" prefHeight="37.0" prefWidth="100.0" style="-fx-background-color: null;">
+               <font>
+                  <Font size="19.0" />
+               </font>
+            </TextField>
+            <TextField fx:id="cominTotalamount" disable="true" editable="false" layoutX="203.0" layoutY="587.0" prefHeight="37.0" prefWidth="90.0" style="-fx-background-color: null;">
+               <font>
+                  <Font size="19.0" />
+               </font>
+            </TextField>
+            <Label layoutX="108.0" layoutY="594.0" text="入库总量：" textFill="#e06767">
+               <font>
+                  <Font size="19.0" />
+               </font>
+            </Label>
+            <Label layoutX="604.0" layoutY="594.0" text="进货总量：" textFill="#e06767">
+               <font>
+                  <Font size="19.0" />
+               </font>
+            </Label>
+            <TextField fx:id="listinTotalamount" disable="true" editable="false" layoutX="699.0" layoutY="587.0" prefHeight="37.0" prefWidth="90.0" style="-fx-background-color: null;">
+               <font>
+                  <Font size="19.0" />
+               </font>
+            </TextField>
+            <TextField fx:id="listinSum" disable="true" editable="false" layoutX="891.0" layoutY="587.0" prefHeight="37.0" prefWidth="100.0" style="-fx-background-color: null;">
+               <font>
+                  <Font size="19.0" />
+               </font>
+            </TextField>
+            <Label layoutX="796.0" layoutY="594.0" text="进货总额：" textFill="#e06767">
+               <font>
+                  <Font size="19.0" />
+               </font>
+            </Label>
+            <Label layoutX="796.0" layoutY="347.0" text="销售总额：" textFill="#e06767">
+               <font>
+                  <Font size="19.0" />
+               </font>
+            </Label>
+            <TextField fx:id="listoutSum" disable="true" editable="false" layoutX="891.0" layoutY="340.0" prefHeight="37.0" prefWidth="100.0" style="-fx-background-color: null;">
+               <font>
+                  <Font size="19.0" />
+               </font>
+            </TextField>
+            <TextField fx:id="listoutTotalamount" disable="true" editable="false" layoutX="699.0" layoutY="340.0" prefHeight="37.0" prefWidth="90.0" style="-fx-background-color: null;">
+               <font>
+                  <Font size="19.0" />
+               </font>
+            </TextField>
+            <Label layoutX="604.0" layoutY="347.0" text="销售总量：" textFill="#e06767">
+               <font>
+                  <Font size="19.0" />
+               </font>
+            </Label>
+         </children></AnchorPane>
+      <Button maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#minimize" onMouseEntered="#buttonEnterEffect" onMouseExited="#buttonExitEffect" onMousePressed="#buttonPressEffect" prefHeight="30.0" prefWidth="40.0" style="-fx-background-color: null;" GridPane.columnIndex="15" GridPane.halignment="LEFT" GridPane.valignment="TOP">
+         <graphic>
+            <ImageView fitHeight="30.0" fitWidth="30.0">
+               <image>
+                  <Image url="@../../../../resources/最小化.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+      <Button maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#exit" onMouseEntered="#buttonEnterEffect" onMouseExited="#buttonExitEffect" onMousePressed="#buttonPressEffect" prefHeight="30.0" prefWidth="40.0" style="-fx-background-color: null;" GridPane.columnIndex="15" GridPane.halignment="RIGHT" GridPane.valignment="TOP">
+         <graphic>
+            <ImageView fitHeight="30.0" fitWidth="30.0">
+               <image>
+                  <Image url="@../../../../resources/关闭.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+   </children>
+</GridPane>

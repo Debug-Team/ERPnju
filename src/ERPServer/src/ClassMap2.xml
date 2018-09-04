@@ -1,0 +1,370 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<hibernate-mapping>
+
+	<!--进货销售人员PO映射 -->
+	<class name="main.PO.CustomerPO" table="customer">
+		<meta attribute="class-description">
+			客户映射
+		</meta>
+		<!-- 主键使用id标签 -->
+		<id name="ID" type="string" column="ID">
+		</id>
+		<!-- 非主键映射关系，注意类型并不是单纯的java类型也不是数据库类型， 而是一种中间类型，注意大小写特别是String在这里开头要小写 -->
+		<property name="category" type="string" column="category" />
+		<property name="level" type="string" column="level" />
+		<property name="name" type="string" column="name" />
+		<property name="number" type="string" column="number" />
+		<property name="address" type="string" column="address" />
+		<property name="email" type="string" column="email" />
+		<property name="receive" type="double" column="receive" />
+		<property name="payment" type="double" column="payment" />
+		<property name="receivelimit" type="double" column="receivelimit" />
+		<property name="defaultsalesman" type="string" column="defaultsalesman" />
+		<property name="isDeleted" type="boolean" column="isDeleted" />
+		<property name="postCode" type="string" column="postCode" />
+	</class>
+	
+	<class name="main.PO.GoodsPO" table="goods">
+		<meta attribute="class-description">
+			商品映射
+		</meta>
+		<!-- 主键使用id标签 -->
+		<id name="ID" type="string" column="ID">
+		</id>
+		<!-- 非主键映射关系，注意类型并不是单纯的java类型也不是数据库类型， 而是一种中间类型，注意大小写特别是String在这里开头要小写 -->
+		<property name="name" type="string" column="name" />
+		<property name="version" type="string" column="version" />
+		<property name="amounts" type="long" column="amounts" />
+		<property name="bid" type="double" column="bid" />
+		<property name="retailPrice" type="double" column="retailPrice" />
+		<property name="recentBid" type="double" column="recentBid" />
+		<property name="recentRetailPrice" type="double" column="recentRetailPrice" />
+		<property name="catagory" type="string" column="catagory" />
+		<property name="avgValue" type="double" column="avgValue" />
+		<property name="alertAmounts" type="int" column="alertAmounts" />
+	</class>
+	
+	<class name="main.PO.CategoryPO" table="category">
+		<meta attribute="class-description">
+			商品分类映射
+		</meta>
+		<!-- 主键使用id标签 -->
+		<id name="categoryID" type="string" column="categoryID">
+		</id>
+		<!-- 非主键映射关系，注意类型并不是单纯的java类型也不是数据库类型， 而是一种中间类型，注意大小写特别是String在这里开头要小写 -->
+		<property name="hasGoods" type="boolean" column="hasGoods" />
+		<property name="myvalue" type="string" column="myvalue" />
+		<property name="epanded" type="boolean" column="epanded" />
+		<property name="fatherStr" type="string" column="fatherStr" />
+		<list name="sonscategory" cascade="all">
+			<key column="fatherCategoryID" />
+			<index column="idx" />
+			<one-to-many class="main.PO.CategoryPO" />
+		</list>
+	</class>
+	
+	<class name="main.PO.CommodityReciptPO" table="commodityRecipt">
+		<meta attribute="class-description">
+			库存单映射
+		</meta>
+		<!-- 主键使用id标签 -->
+		<id name="ID" type="int" column="ID">
+			<generator class="native" />
+		</id>
+		<!-- 非主键映射关系，注意类型并不是单纯的java类型也不是数据库类型， 而是一种中间类型，注意大小写特别是String在这里开头要小写 -->
+		<property name="type" type="string" column="type" />
+		<property name="goodsName" type="string" column="goodsName" />
+		<property name="goodsID" type="string" column="goodsID" />
+		<property name="changedNumbers" type="int" column="changedNumbers" />
+		<property name="createDate" type="string" column="createDate" />
+		<property name="state" type="string" column="state" />
+	</class>
+
+	<class name="main.PO.ManifestPO" table="manifest">
+		<meta attribute="class-description">
+			Manifest映射
+		</meta>
+		<id name="ID" type="string" column="ID">
+		</id>
+		<property name="type" type="string" column="type" />
+		<property name="customerName" type="string" column="customerName" />
+		<property name="warehouse" type="string" column="warehouse" />
+		<property name="operator" type="string" column="operator" />
+		<property name="comment" type="string" column="comment" />
+		<property name="sum" type="double" column="sum" />
+		<property name="salesman" type="string" column="salesman" />
+		<property name="discount" type="double" column="discount" />
+		<property name="promotionDiscount" type="double" column="promotionDiscount" />
+		<property name="createDate" type="string" column="createDate" />
+		<property name="state" type="string" column="state" />
+		<property name="couponID" type="int" column="couponID" />
+		<property name="couponValue" type="double" column="couponValue" />
+		<list name="goodsList" cascade="all">
+			<key column="goodsInList_ID" />
+			<index column="idx" />
+			<one-to-many class="main.PO.ReciptGoodsPO" />
+		</list>
+		<list name="giftGoodslist" cascade="all">
+			<key column="giftGoodslist_ID" />
+			<index column="idx" />
+			<one-to-many class="main.PO.ReciptGoodsPO" />
+		</list>
+	</class>
+
+	<class name="main.PO.ReciptGoodsPO" table="reciptGoods">
+		<meta attribute="class-description">
+			单据中商品映射（包含备注）
+		</meta>
+		<id name="sqlID" type="int" column="sqlID">
+			<generator class="native" />
+		</id>
+		<property name="name" type="string" column="name" />
+		<property name="version" type="string" column="version" />
+		<property name="goodsID" type="string" column="goodsID" />
+		<property name="amounts" type="int" column="amounts" />
+		<property name="bid" type="double" column="bid" />
+		<property name="sum" type="double" column="sum" />
+		<property name="comment" type="string" column="comment" />
+	</class>
+		<class name="main.PO.LogPO" table="log">
+		<meta attribute="class-description">
+			日志映射
+		</meta>
+		<id name="sqlID" type="int" column="sqlID">
+			<generator class="native" />
+		</id>
+		<property name="jobNum" type="string" column="jobNum" />
+		<property name="createTime" type="string" column="createTime" />
+		<property name="message" type="string" column="message" />
+	</class>
+
+	<!--财务人员PO映射 -->
+	<!--BankAccountPO-->
+	<class name="main.PO.BankAccountPO" table="BANK_ACCOUNT">
+		<meta attribute="class-description">
+			BankAccountPO持久化映射
+		</meta>
+		<id name="id" type="string" column="id">
+		</id>
+		<property name="amount" column="amount" type="double"/>
+	</class>
+	
+	<!--AccountPO-->
+	<class name="main.PO.AccountPO" table="ACCOUNT">
+		<meta attribute="class-description">
+			AccountPO持久化映射
+		</meta>
+		<!-- 主键使用id标签 -->
+		<id name="id" type="int" column="id">
+			<generator class="native" />
+		</id>
+		<!-- 非主键映射关系，注意类型并不是单纯的java类型也不是数据库类型，
+		而是一种中间类型，注意大小写特别是String在这里开头要小写 -->
+		<list name="goodsList" cascade="save-update">  
+        	<key column="giftGoodslist_ID"/>
+        	<index column="idx"/>
+        	<one-to-many class="main.PO.ReciptGoodsPO"/>  
+        </list> 
+        <list name="customerList" cascade="save-update">  
+        	<key column="customerList_Id"/>
+        	<index column="idx"/>
+        	<one-to-many class="main.PO.CustomerPO"/>  
+        </list> 
+        <list name="bankAccountList" cascade="save-update">  
+        	<key column="bankAccountList_Id"/>
+        	<index column="idx"/>
+        	<one-to-many class="main.PO.BankAccountPO"/>  
+        </list> 
+	</class>
+	
+	<!--ReciptPO-->
+	<class name="main.PO.ReciptPO" table="RECIPT">
+		<meta attribute="class-description">
+			ReciptPO持久化映射
+		</meta>
+		<id name="id" type="string" column="id"/>
+		<property name="state" column="state" type="string"/>
+	</class>
+	
+	<!--CashBillPO-->
+	<union-subclass name="main.PO.CashBillPO" table="CASH_BILL" extends="main.PO.ReciptPO">
+		<meta attribute="class-description">
+			CashBillPO持久化映射
+		</meta>
+        <property name="operator" column="operator" type="string"/>
+      	<property name="bankAccountID" column="bankAccountID" type="string"/>
+      	<list name="itemList" cascade="all">  
+        	<key column="itemList_Id"/>
+        	<!-- 注意index是数据库中的关键字要避免与其冲突，此处index对应元素在List中的索引 -->
+        	<index column="idx"/>
+        	<one-to-many class="main.PO.CashItemPO"/>  
+        </list> 
+      	<property name="sum" column="sum" type="double"/>
+    </union-subclass>
+	
+	<!--CashItemPO-->
+	<class name="main.PO.CashItemPO" table="CASH_ITEM">
+		<meta attribute="class-description">
+			CashItemPO持久化映射
+		</meta>
+		<!-- 主键使用id标签 -->
+		<id name="id" type="int" column="id">
+			<generator class="native" />
+		</id>
+		<property name="name" column="name" type="string"/>
+      	<property name="amount" column="amount" type="double"/>
+      	<property name="comment" column="comment" type="string"/>
+    </class>
+    
+    <!--CollectionOrderPO-->
+    <union-subclass name="main.PO.CollectionOrderPO" table="COLLECTION_ORDER" extends="main.PO.ReciptPO">
+    	<meta attribute="class-description">
+			CollectionOrderPO持久化映射
+		</meta>
+      	<property name="operator" column="operator" type="string"/>
+      	<property name="supplier" column="supplier" type="string"/>
+      	<property name="retailer" column="retailer" type="string"/>
+      	<list name="itemList" cascade="all">  
+        	<key column="itemList_Id"/>
+        	<index column="idx"/>
+        	<one-to-many class="main.PO.CollectionItemPO"/>  
+        </list> 
+      	<property name="sum" column="sum" type="double"/>
+    </union-subclass>
+    
+    <!--CollectionItemPO-->
+	<class name="main.PO.CollectionItemPO" table="COLLECTION_ITEM">
+		<meta attribute="class-description">
+			CollectionItemPO持久化映射
+		</meta>
+		<id name="id" type="int" column="id">
+			<generator class="native" />
+		</id>
+		<property name="bankAccountID" column="BankAccountID" type="string"/>
+      	<property name="amount" column="amount" type="double"/>
+      	<property name="comment" column="comment" type="string"/>
+    </class>
+    
+    <!--PaymentOrderPO-->
+    <union-subclass name="main.PO.PaymentOrderPO" table="PAYMENT_ORDER" extends="main.PO.ReciptPO">
+    	<meta attribute="class-description">
+			PaymentOrderPO持久化映射
+		</meta>
+		<!-- 主键使用id标签 -->
+      	<property name="operator" column="operator" type="string"/>
+      	<property name="supplier" column="supplier" type="string"/>
+      	<property name="retailer" column="retailer" type="string"/>
+      	<list name="itemList" cascade="all">  
+        	<key column="itemList_Id"/>
+        	<index column="idx"/>
+        	<one-to-many class="main.PO.PaymentItemPO"/>  
+        </list> 
+      	<property name="sum" column="sum" type="double"/>
+	</union-subclass>
+	
+	<!--PaymentItemPO-->
+	<class name="main.PO.PaymentItemPO" table="PAYMENT_ITEM">
+		<meta attribute="class-description">
+			PaymentItemPO持久化映射
+		</meta>
+		<id name="id" type="int" column="id">
+			<generator class="native" />
+		</id>
+		<property name="bankAccountID" column="BankAccountID" type="string"/>
+      	<property name="amount" column="amount" type="double"/>
+      	<property name="comment" column="comment" type="string"/>
+    </class>
+    
+    <!--总经理PO映射 -->
+    <!--PromotionPO-->
+	<class name="main.PO.PromotionPO" table="PROMOTION">
+		<meta attribute="class-description">
+			PromotionPO持久化映射
+		</meta>
+		<id name="id" type="string" column="id"/>
+		<property name="startTime" column="startTime" type="string"/>
+		<property name="endTime" column="endTime" type="string"/>
+	</class>
+	
+	<!--TotalPromotionPO-->
+    <union-subclass name="main.PO.TotalPromotionPO" table="TOTAL_PROMOTION" extends="main.PO.PromotionPO">
+    	<meta attribute="class-description">
+			TotalPromotionPO持久化映射
+		</meta>
+      	<property name="totalNumber" column="totalNumber" type="double"/>
+      	<list name="giftList" cascade="all">  
+        	<key column="giftGoodslist_ID"/>
+        	<index column="idx"/>
+        	<one-to-many class="main.PO.ReciptGoodsPO"/>  
+        </list> 
+        <list name="couponList" cascade="all">  
+        	<key column="couponList_Id"/>
+        	<index column="idx"/>
+        	<one-to-many class="main.PO.CouponPO"/>  
+        </list> 
+	</union-subclass>
+	
+	<!--LevelPromotionPO-->
+    <union-subclass name="main.PO.LevelPromotionPO" table="LEVEL_PROMOTION" extends="main.PO.PromotionPO">
+    	<meta attribute="class-description">
+			LevelPromotionPO持久化映射
+		</meta>
+		<property name="level" column="level" type="string"/>
+      	<property name="discount" column="discount" type="double"/>
+      	<list name="giftList" cascade="all">  
+        	<key column="giftGoodslist_ID"/>
+        	<index column="idx"/>
+        	<one-to-many class="main.PO.ReciptGoodsPO"/>  
+        </list> 
+        <list name="couponList" cascade="all">  
+        	<key column="couponList_Id"/>
+        	<index column="idx"/>
+        	<one-to-many class="main.PO.CouponPO"/>  
+        </list> 
+	</union-subclass>
+	
+	<!--PackagePromotionPO-->
+    <union-subclass name="main.PO.PackagePromotionPO" table="PACKAGE_PROMOTION" extends="main.PO.PromotionPO">
+    	<meta attribute="class-description">
+			PackagePromotionPO持久化映射
+		</meta>
+      	<property name="reducePrice" column="reducePrice" type="double"/>
+      	<list name="giftList" cascade="all">  
+        	<key column="giftGoodslist_ID"/>
+        	<index column="idx"/>
+        	<one-to-many class="main.PO.ReciptGoodsPO"/>  
+        </list> 
+	</union-subclass>
+	
+	<!--CouponPO-->
+	<class name="main.PO.CouponPO" table="COUPON">
+		<meta attribute="class-description">
+			CouponPO持久化映射
+		</meta>
+		<id name="id" type="int" column="id">
+			<generator class="native" />
+		</id>
+		<property name="startTime" column="startTime" type="string"/>
+		<property name="endTime" column="endTime" type="string"/>
+		<property name="amount" column="amount" type="double"/>
+	</class>
+	
+	<!--UserPO-->
+	<class name="main.PO.UserPO" table="USER">
+		<meta attribute="class-description">
+			UserPO持久化映射
+		</meta>
+		<id name="id" type="int" column="id">
+			<generator class="native" />
+		</id>
+		<property name="name" column="name" type="string"/>
+		<property name="sex" column="sex" type="string"/>
+		<property name="age" column="age" type="int"/>
+		<property name="jobNum" column="jobNum" type="string"/>
+		<property name="password" column="password" type="string"/>
+		<property name="type" column="type" type="string"/>
+		<property name="isSupremeAuthority" column="isSupremeAuthority" type="boolean"/>
+	</class>
+	
+</hibernate-mapping>

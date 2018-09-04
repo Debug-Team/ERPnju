@@ -1,0 +1,537 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+
+<GridPane alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="720.0" prefWidth="1280.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="main.Presentation.FinancialStaffUI.ReciptUI.CheckHistoryFrame">
+   <children>
+      <Label text="查看以往单据" GridPane.columnIndex="2" GridPane.columnSpan="13" GridPane.halignment="CENTER" GridPane.rowSpan="2">
+         <font>
+            <Font size="28.0" />
+         </font>
+      </Label>
+      <GridPane prefHeight="184.0" prefWidth="123.0" style="-fx-background-color: rgb(224,103,103);" GridPane.columnSpan="2" GridPane.rowSpan="18">
+         <children>
+            <Circle fill="WHITE" radius="68.0" stroke="#ffffff00" strokeType="INSIDE" strokeWidth="0.0" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="2" GridPane.valignment="CENTER" />
+            <Button minHeight="-Infinity" mnemonicParsing="false" onAction="#home" onMouseEntered="#buttonEnterEffect" onMouseExited="#buttonExitEffect" onMousePressed="#buttonPressEffect" prefHeight="48.0" style="-fx-background-color: null;" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="14">
+               <graphic>
+                  <ImageView fitHeight="40.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../../resources/主界面.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <tooltip>
+                  <Tooltip text="主界面" />
+               </tooltip>
+            </Button>
+            <Button minHeight="-Infinity" mnemonicParsing="false" onAction="#back" onMouseEntered="#buttonEnterEffect" onMouseExited="#buttonExitEffect" onMousePressed="#buttonPressEffect" prefHeight="48.0" style="-fx-background-color: null;" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="16">
+               <graphic>
+                  <ImageView fitHeight="40.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../../resources/返回.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <tooltip>
+                  <Tooltip text="返回" />
+               </tooltip>
+            </Button>
+            <Label GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="2" GridPane.valignment="CENTER">
+               <graphic>
+                  <ImageView fx:id="head" fitHeight="136.0" fitWidth="136.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../../resources/登陆界面logo.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <tooltip>
+                  <Tooltip text="用户信息" />
+               </tooltip>
+            </Label>
+         </children>
+         <columnConstraints>
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+         </columnConstraints>
+         <rowConstraints>
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+         </rowConstraints>
+      </GridPane>
+      <Line endX="1120.0" GridPane.columnIndex="2" GridPane.columnSpan="14" GridPane.rowIndex="1" GridPane.valignment="BOTTOM" />
+      <Pane GridPane.columnIndex="15">
+         <children>
+            <Button layoutX="40.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#exit" onMouseEntered="#buttonEnterEffect" onMouseExited="#buttonExitEffect" onMousePressed="#buttonPressEffect" prefHeight="30.0" prefWidth="40.0" style="-fx-background-color: null;" GridPane.columnIndex="15" GridPane.halignment="RIGHT" GridPane.valignment="TOP">
+               <graphic>
+                  <ImageView fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../../resources/关闭.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <Button maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#minimize" onMouseEntered="#buttonEnterEffect" onMouseExited="#buttonExitEffect" onMousePressed="#buttonPressEffect" prefHeight="30.0" prefWidth="40.0" style="-fx-background-color: null;" GridPane.columnIndex="15" GridPane.halignment="LEFT" GridPane.valignment="TOP">
+               <graphic>
+                  <ImageView fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../../resources/最小化.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+         </children>
+      </Pane>
+      <AnchorPane prefHeight="640.0" prefWidth="993.0" GridPane.columnIndex="2" GridPane.columnSpan="13" GridPane.rowIndex="2" GridPane.rowSpan="16">
+         <children>
+            <TabPane fx:id="tabPane" layoutX="1.0" prefHeight="640.0" prefWidth="1040.0">
+               <tabs>
+                  <Tab text="审批界面">
+                     <content>
+                        <AnchorPane layoutX="28.0" layoutY="64.0">
+                           <children>
+                              <TableView fx:id="reciptTable" layoutX="28.0" layoutY="25.0" prefHeight="537.0" prefWidth="984.0" style="-fx-font-size: 15;" stylesheets="@../../TableViewCSS.css">
+                                 <columns>
+                                    <TableColumn fx:id="reciptTypeColumn" editable="false" prefWidth="190.0" resizable="false" text="单据类型" />
+                                    <TableColumn fx:id="reciptIdColumn" editable="false" prefWidth="330.0" resizable="false" text="单据编号" />
+                                    <TableColumn fx:id="operatorColumn" editable="false" prefWidth="170.0" resizable="false" text="操作员" />
+                                    <TableColumn fx:id="dateColumn" editable="false" prefWidth="180.0" resizable="false" text="日期" />
+                                    <TableColumn fx:id="stateColumn" editable="false" prefWidth="103.0" text="状态" />
+                                 </columns>
+                              </TableView>
+                           </children>
+                        </AnchorPane>
+                     </content>
+                  </Tab>
+                  <Tab text="收款单">
+                     <content>
+                        <AnchorPane>
+                           <children>
+                              <Pane layoutX="97.0" layoutY="82.0">
+                                 <children>
+                                    <Pane layoutX="478.0">
+                                       <children>
+                                          <Label layoutY="7.0" text="销售商：">
+                                             <font>
+                                                <Font size="20.0" />
+                                             </font>
+                                          </Label>
+                                          <TextField fx:id="sellerInCollection" editable="false" layoutX="100.0" prefHeight="40.0" prefWidth="268.0" />
+                                       </children>
+                                    </Pane>
+                                    <Pane layoutY="385.0">
+                                       <children>
+                                          <Pane>
+                                             <children>
+                                                <Label layoutY="7.0" text="总额汇总：">
+                                                   <font>
+                                                      <Font size="20.0" />
+                                                   </font>
+                                                </Label>
+                                                <TextField fx:id="sumInCollection" editable="false" focusTraversable="false" layoutX="100.0" text="0.0">
+                                                   <font>
+                                                      <Font size="20.0" />
+                                                   </font>
+                                                </TextField>
+                                             </children>
+                                          </Pane>
+                                          <Pane layoutX="478.0">
+                                             <children>
+                                                <Label layoutY="7.0" text="操作员：">
+                                                   <font>
+                                                      <Font size="20.0" />
+                                                   </font>
+                                                </Label>
+                                                <TextField fx:id="operatorInCollection" editable="false" focusTraversable="false" layoutX="100.0">
+                                                   <font>
+                                                      <Font size="20.0" />
+                                                   </font>
+                                                </TextField>
+                                             </children>
+                                          </Pane>
+                                       </children>
+                                    </Pane>
+                                    <Pane layoutX="184.0" layoutY="443.0">
+                                       <children>
+                                          <Button minHeight="-Infinity" mnemonicParsing="false" onAction="#cancel" onMouseEntered="#buttonEnterEffect" onMouseExited="#buttonExitEffect" onMousePressed="#buttonPressEffect" style="-fx-background-color: null; -fx-border-color: rgba(0,0,0, 0.15, 0.5, 0.5);" text="取消">
+                                             <font>
+                                                <Font size="18.0" />
+                                             </font>
+                                             <tooltip>
+                                                <Tooltip text="取消" />
+                                             </tooltip>
+                                          </Button>
+                                          <Button defaultButton="true" layoutX="418.0" minHeight="-Infinity" mnemonicParsing="false" onAction="#sure" onMouseEntered="#buttonEnterEffect" onMouseExited="#buttonExitEffect" onMousePressed="#buttonPressEffect" style="-fx-background-color: null; -fx-border-color: rgba(0,0,0, 0.15, 0.5, 0.5);" text="确认">
+                                             <font>
+                                                <Font size="18.0" />
+                                             </font>
+                                             <tooltip>
+                                                <Tooltip text="确认" />
+                                             </tooltip>
+                                          </Button>
+                                       </children>
+                                    </Pane>
+                                    <Pane layoutY="60.0">
+                                       <children>
+                                          <Label layoutY="1.0" text="转账列表：">
+                                             <font>
+                                                <Font size="20.0" />
+                                             </font>
+                                          </Label>
+                                          <TableView fx:id="tableInCollection" editable="true" layoutX="100.0" layoutY="-1.0" prefHeight="304.0" prefWidth="747.0" style="-fx-font-size: 16;" stylesheets="@../../TableViewCSS.css">
+                                             <columns>
+                                                <TableColumn fx:id="nameColumnInCollection" editable="false" prefWidth="265.0" text="账户名称" />
+                                                <TableColumn fx:id="amountColumnInCollection" editable="false" prefWidth="213.0" text="转账金额" />
+                                                <TableColumn fx:id="commentColumnInCollection" editable="false" prefWidth="259.0" sortable="false" text="备注" />
+                                             </columns>
+                                          </TableView>
+                                       </children>
+                                    </Pane>
+                                    <Pane>
+                                       <children>
+                                          <Label layoutY="7.0" text="供应商：">
+                                             <font>
+                                                <Font size="20.0" />
+                                             </font>
+                                          </Label>
+                                          <TextField fx:id="supplierInCollection" editable="false" layoutX="100.0" prefHeight="40.0" prefWidth="268.0" />
+                                       </children>
+                                    </Pane>
+                                 </children>
+                              </Pane>
+                              <Pane layoutX="97.0" layoutY="22.0">
+                                 <children>
+                                    <Label layoutY="7.0" text="单据编号：">
+                                       <font>
+                                          <Font size="20.0" />
+                                       </font>
+                                    </Label>
+                                    <TextField fx:id="idInCollection" editable="false" layoutX="100.0" prefHeight="40.0" prefWidth="746.0" />
+                                 </children>
+                              </Pane>
+                           </children>
+                        </AnchorPane>
+                     </content>
+                  </Tab>
+                  <Tab text="付款单">
+                     <content>
+                        <AnchorPane>
+                           <children>
+                              <Pane layoutX="97.0" layoutY="82.0">
+                                 <children>
+                                    <Pane layoutX="478.0">
+                                       <children>
+                                          <Label layoutY="7.0" text="销售商：">
+                                             <font>
+                                                <Font size="20.0" />
+                                             </font>
+                                          </Label>
+                                          <TextField fx:id="sellerInPayment" editable="false" layoutX="100.0" prefHeight="40.0" prefWidth="268.0" />
+                                       </children>
+                                    </Pane>
+                                    <Pane layoutY="385.0">
+                                       <children>
+                                          <Pane>
+                                             <children>
+                                                <Label layoutY="7.0" text="总额汇总：">
+                                                   <font>
+                                                      <Font size="20.0" />
+                                                   </font>
+                                                </Label>
+                                                <TextField fx:id="sumInPayment" editable="false" focusTraversable="false" layoutX="100.0" text="0.0">
+                                                   <font>
+                                                      <Font size="20.0" />
+                                                   </font>
+                                                </TextField>
+                                             </children>
+                                          </Pane>
+                                          <Pane layoutX="478.0">
+                                             <children>
+                                                <Label layoutY="7.0" text="操作员：">
+                                                   <font>
+                                                      <Font size="20.0" />
+                                                   </font>
+                                                </Label>
+                                                <TextField fx:id="operatorInPayment" editable="false" focusTraversable="false" layoutX="100.0">
+                                                   <font>
+                                                      <Font size="20.0" />
+                                                   </font>
+                                                </TextField>
+                                             </children>
+                                          </Pane>
+                                       </children>
+                                    </Pane>
+                                    <Pane layoutX="184.0" layoutY="443.0">
+                                       <children>
+                                          <Button minHeight="-Infinity" mnemonicParsing="false" onAction="#cancel" onMouseEntered="#buttonEnterEffect" onMouseExited="#buttonExitEffect" onMousePressed="#buttonPressEffect" style="-fx-background-color: null; -fx-border-color: rgba(0,0,0, 0.15, 0.5, 0.5);" text="取消">
+                                             <font>
+                                                <Font size="18.0" />
+                                             </font>
+                                             <tooltip>
+                                                <Tooltip text="取消" />
+                                             </tooltip>
+                                          </Button>
+                                          <Button defaultButton="true" layoutX="418.0" minHeight="-Infinity" mnemonicParsing="false" onAction="#sure" onMouseEntered="#buttonEnterEffect" onMouseExited="#buttonExitEffect" onMousePressed="#buttonPressEffect" style="-fx-background-color: null; -fx-border-color: rgba(0,0,0, 0.15, 0.5, 0.5);" text="确认">
+                                             <font>
+                                                <Font size="18.0" />
+                                             </font>
+                                             <tooltip>
+                                                <Tooltip text="确认" />
+                                             </tooltip>
+                                          </Button>
+                                       </children>
+                                    </Pane>
+                                    <Pane layoutY="60.0">
+                                       <children>
+                                          <Label layoutY="1.0" text="转账列表：">
+                                             <font>
+                                                <Font size="20.0" />
+                                             </font>
+                                          </Label>
+                                          <TableView fx:id="tableInPayment" editable="true" layoutX="100.0" layoutY="-1.0" prefHeight="304.0" prefWidth="747.0" style="-fx-font-size: 16;" stylesheets="@../../TableViewCSS.css">
+                                             <columns>
+                                                <TableColumn fx:id="nameColumnInPayment" editable="false" prefWidth="265.0" text="账户名称" />
+                                                <TableColumn fx:id="amountColumnInPayment" editable="false" prefWidth="213.0" text="转账金额" />
+                                                <TableColumn fx:id="commentColumnInPayment" editable="false" prefWidth="259.0" sortable="false" text="备注" />
+                                             </columns>
+                                          </TableView>
+                                       </children>
+                                    </Pane>
+                                    <Pane>
+                                       <children>
+                                          <Label layoutY="7.0" text="供应商：">
+                                             <font>
+                                                <Font size="20.0" />
+                                             </font>
+                                          </Label>
+                                          <TextField fx:id="supplierInPayment" editable="false" layoutX="100.0" prefHeight="40.0" prefWidth="268.0" />
+                                       </children>
+                                    </Pane>
+                                 </children>
+                              </Pane>
+                              <Pane layoutX="97.0" layoutY="22.0">
+                                 <children>
+                                    <Label layoutY="7.0" text="单据编号：">
+                                       <font>
+                                          <Font size="20.0" />
+                                       </font>
+                                    </Label>
+                                    <TextField fx:id="idInPayment" editable="false" layoutX="100.0" prefHeight="40.0" prefWidth="746.0" />
+                                 </children>
+                              </Pane>
+                           </children>
+                        </AnchorPane>
+                     </content>
+                  </Tab>
+                  <Tab text="现金费用单">
+                     <content>
+                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                           <children>
+                              <Pane layoutX="96.0" layoutY="14.0">
+                                 <children>
+                                    <Pane layoutX="2.0" layoutY="461.0">
+                                       <children>
+                                          <Pane>
+                                             <children>
+                                                <Label layoutY="7.0" text="总额汇总：">
+                                                   <font>
+                                                      <Font size="20.0" />
+                                                   </font>
+                                                </Label>
+                                                <TextField fx:id="sumInCashBill" editable="false" focusTraversable="false" layoutX="100.0" text="0.0">
+                                                   <font>
+                                                      <Font size="20.0" />
+                                                   </font>
+                                                </TextField>
+                                             </children>
+                                          </Pane>
+                                          <Pane layoutX="478.0">
+                                             <children>
+                                                <Label layoutY="7.0" text="操作员：">
+                                                   <font>
+                                                      <Font size="20.0" />
+                                                   </font>
+                                                </Label>
+                                                <TextField fx:id="operatorInCashBill" editable="false" focusTraversable="false" layoutX="100.0">
+                                                   <font>
+                                                      <Font size="20.0" />
+                                                   </font>
+                                                </TextField>
+                                             </children>
+                                          </Pane>
+                                       </children>
+                                    </Pane>
+                                    <Pane layoutX="2.0" layoutY="120.0">
+                                       <children>
+                                          <Label layoutY="1.0" text="条目清单：">
+                                             <font>
+                                                <Font size="20.0" />
+                                             </font>
+                                          </Label>
+                                          <TableView fx:id="tableInCashBill" editable="true" layoutX="100.0" layoutY="-1.0" prefHeight="320.0" prefWidth="747.0" style="-fx-font-size: 16;" stylesheets="@../../TableViewCSS.css">
+                                             <columns>
+                                                <TableColumn fx:id="nameColumnInCashBill" editable="false" prefWidth="265.0" text="条目名" />
+                                                <TableColumn fx:id="amountColumnInCashBill" editable="false" prefWidth="213.0" text="金额" />
+                                                <TableColumn fx:id="commentColumnInCashBill" editable="false" prefWidth="259.0" sortable="false" text="备注" />
+                                             </columns>
+                                          </TableView>
+                                       </children>
+                                    </Pane>
+                                    <Pane layoutX="185.0" layoutY="522.0">
+                                       <children>
+                                          <Button defaultButton="true" layoutX="418.0" minHeight="-Infinity" mnemonicParsing="false" onAction="#sure" onMouseEntered="#buttonEnterEffect" onMouseExited="#buttonExitEffect" onMousePressed="#buttonPressEffect" style="-fx-background-color: null; -fx-border-color: rgba(0,0,0, 0.15, 0.5, 0.5);" text="确认">
+                                             <font>
+                                                <Font size="18.0" />
+                                             </font>
+                                             <tooltip>
+                                                <Tooltip text="确认" />
+                                             </tooltip>
+                                          </Button>
+                                          <Button minHeight="-Infinity" mnemonicParsing="false" onAction="#cancel" onMouseEntered="#buttonEnterEffect" onMouseExited="#buttonExitEffect" onMousePressed="#buttonPressEffect" style="-fx-background-color: null; -fx-border-color: rgba(0,0,0, 0.15, 0.5, 0.5);" text="取消">
+                                             <font>
+                                                <Font size="18.0" />
+                                             </font>
+                                             <tooltip>
+                                                <Tooltip text="取消" />
+                                             </tooltip>
+                                          </Button>
+                                       </children>
+                                    </Pane>
+                                    <Pane layoutX="1.0" layoutY="57.0">
+                                       <children>
+                                          <Label layoutY="7.0" text="银行账户：">
+                                             <font>
+                                                <Font size="20.0" />
+                                             </font>
+                                          </Label>
+                                          <TextField fx:id="bankAccountInCashBill" editable="false" layoutX="100.0" prefHeight="40.0" prefWidth="748.0" />
+                                       </children>
+                                    </Pane>
+                                    <Pane layoutX="1.0">
+                                       <children>
+                                          <Label layoutY="7.0" text="单据编号：">
+                                             <font>
+                                                <Font size="20.0" />
+                                             </font>
+                                          </Label>
+                                          <TextField fx:id="idInCashBill" editable="false" layoutX="100.0" prefHeight="40.0" prefWidth="748.0" />
+                                       </children>
+                                    </Pane>
+                                 </children>
+                              </Pane>
+                           </children>
+                        </AnchorPane>
+                     </content>
+                  </Tab>
+               </tabs>
+            </TabPane>
+            <Rectangle fill="WHITE" height="40.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="1040.0" />
+         </children>
+      </AnchorPane>
+      <GridPane style="-fx-background-color: rgb(224,103,103);" GridPane.columnIndex="15" GridPane.rowIndex="2" GridPane.rowSpan="16" GridPane.valignment="TOP">
+         <children>
+            <Button mnemonicParsing="false" onAction="#refresh" onMouseEntered="#buttonEnterEffect" onMouseExited="#buttonExitEffect" onMousePressed="#buttonPressEffect" style="-fx-background-color: null;" GridPane.halignment="CENTER" GridPane.rowIndex="3" GridPane.valignment="CENTER">
+               <graphic>
+                  <ImageView fitHeight="40.0" fitWidth="40.0">
+                     <image>
+                        <Image url="@../../../../resources/刷新.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <tooltip>
+                  <Tooltip text="修改单据数据" />
+               </tooltip>
+            </Button>
+            <Button fx:id="checkButton" mnemonicParsing="false" onAction="#showRecipt" onMouseEntered="#buttonEnterEffect" onMouseExited="#buttonExitEffect" onMousePressed="#buttonPressEffect" style="-fx-background-color: null;" GridPane.halignment="CENTER" GridPane.rowIndex="1">
+               <graphic>
+                  <ImageView fitHeight="40.0" fitWidth="40.0">
+                     <image>
+                        <Image url="@../../../../resources/查找.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+         </children>
+         <columnConstraints>
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+         </columnConstraints>
+         <rowConstraints>
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+         </rowConstraints>
+      </GridPane>
+   </children>
+   <columnConstraints>
+      <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+      <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+      <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+      <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+      <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+      <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+      <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+      <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+      <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+      <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+      <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+      <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+      <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+      <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+      <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+      <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+   </columnConstraints>
+   <rowConstraints>
+      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+   </rowConstraints>
+</GridPane>

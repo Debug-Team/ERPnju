@@ -1,0 +1,1222 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+
+<GridPane alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="720.0" prefWidth="1280.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="main.Presentation.ManagerUI.CheckReciptFrame">
+   <children>
+      <Label text="审批单据" GridPane.columnIndex="2" GridPane.columnSpan="13" GridPane.halignment="CENTER" GridPane.rowSpan="2">
+         <font>
+            <Font size="28.0" />
+         </font>
+      </Label>
+      <GridPane prefHeight="184.0" prefWidth="123.0" style="-fx-background-color: rgb(224,103,103);" GridPane.columnSpan="2" GridPane.rowSpan="18">
+         <children>
+            <Circle fill="WHITE" radius="68.0" stroke="#ffffff00" strokeType="INSIDE" strokeWidth="0.0" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="2" GridPane.valignment="CENTER" />
+            <Button minHeight="-Infinity" mnemonicParsing="false" onAction="#home" onMouseEntered="#buttonEnterEffect" onMouseExited="#buttonExitEffect" onMousePressed="#buttonPressEffect" prefHeight="48.0" style="-fx-background-color: null;" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="14">
+               <graphic>
+                  <ImageView fitHeight="40.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../resources/主界面.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <tooltip>
+                  <Tooltip text="主界面" />
+               </tooltip>
+            </Button>
+            <Button minHeight="-Infinity" mnemonicParsing="false" onAction="#back" onMouseEntered="#buttonEnterEffect" onMouseExited="#buttonExitEffect" onMousePressed="#buttonPressEffect" prefHeight="48.0" style="-fx-background-color: null;" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="16">
+               <graphic>
+                  <ImageView fitHeight="40.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../resources/返回.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <tooltip>
+                  <Tooltip text="返回" />
+               </tooltip>
+            </Button>
+            <Label GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="2" GridPane.valignment="CENTER">
+               <graphic>
+                  <ImageView fx:id="head" fitHeight="136.0" fitWidth="136.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../resources/登陆界面logo.png" />
+                     </image></ImageView>
+               </graphic>
+               <tooltip>
+                  <Tooltip text="用户信息" />
+               </tooltip>
+            </Label>
+         </children>
+         <columnConstraints>
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+         </columnConstraints>
+         <rowConstraints>
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+         </rowConstraints>
+      </GridPane>
+      <Line endX="1120.0" GridPane.columnIndex="2" GridPane.columnSpan="14" GridPane.rowIndex="1" GridPane.valignment="BOTTOM" />
+      <Pane GridPane.columnIndex="15">
+         <children>
+            <Button layoutX="40.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#exit" onMouseEntered="#buttonEnterEffect" onMouseExited="#buttonExitEffect" onMousePressed="#buttonPressEffect" prefHeight="30.0" prefWidth="40.0" style="-fx-background-color: null;" GridPane.columnIndex="15" GridPane.halignment="RIGHT" GridPane.valignment="TOP">
+               <graphic>
+                  <ImageView fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../resources/关闭.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <Button maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#minimize" onMouseEntered="#buttonEnterEffect" onMouseExited="#buttonExitEffect" onMousePressed="#buttonPressEffect" prefHeight="30.0" prefWidth="40.0" style="-fx-background-color: null;" GridPane.columnIndex="15" GridPane.halignment="LEFT" GridPane.valignment="TOP">
+               <graphic>
+                  <ImageView fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../resources/最小化.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+         </children>
+      </Pane>
+      <AnchorPane prefHeight="640.0" prefWidth="993.0" GridPane.columnIndex="2" GridPane.columnSpan="13" GridPane.rowIndex="2" GridPane.rowSpan="16">
+         <children>
+            <Pane layoutX="28.0" layoutY="33.0" prefHeight="29.0" prefWidth="984.0" visible="false">
+               <children>
+                  <ComboBox fx:id="reciptTypeBox" editable="true" layoutX="372.0" onAction="#setReciptTypeBox" prefHeight="29.0" prefWidth="181.0" promptText="单据类型" />
+                  <ComboBox fx:id="operatorBox" editable="true" layoutX="553.0" onAction="#setOperatorBox" prefHeight="29.0" prefWidth="175.0" promptText="操作员" />
+                  <DatePicker fx:id="startDatePicker" onAction="#setTime" prefHeight="29.0" prefWidth="186.0" promptText="起始时间" />
+                  <DatePicker fx:id="endDatePicker" layoutX="186.0" onAction="#setTime" prefHeight="29.0" prefWidth="186.0" promptText="结束时间" />
+               </children>
+            </Pane>
+            <TabPane fx:id="tabPane" layoutX="1.0" prefHeight="640.0" prefWidth="1040.0">
+               <tabs>
+                  <Tab text="审批界面">
+                     <content>
+                        <AnchorPane layoutX="28.0" layoutY="64.0">
+                           <children>
+                              <TableView fx:id="reciptTable" layoutX="28.0" layoutY="25.0" prefHeight="537.0" prefWidth="984.0" style="-fx-font-size: 15;" stylesheets="@../TableViewCSS.css">
+                                 <columns>
+                                    <TableColumn fx:id="reciptTypeColumn" editable="false" prefWidth="210.0" resizable="false" text="单据类型" />
+                                    <TableColumn fx:id="reciptIdColumn" editable="false" prefWidth="400.0" resizable="false" text="单据编号" />
+                                    <TableColumn fx:id="operatorColumn" editable="false" prefWidth="170.0" resizable="false" text="操作员" />
+                                    <TableColumn fx:id="dateColumn" editable="false" prefWidth="194.0" resizable="false" text="日期" />
+                                 </columns>
+                              </TableView>
+                           </children>
+                        </AnchorPane>
+                     </content>
+                  </Tab>
+                  <Tab text="收款单">
+                     <content>
+                        <AnchorPane>
+                           <children>
+                              <Pane layoutX="97.0" layoutY="82.0">
+                                 <children>
+                                    <Pane layoutX="478.0">
+                                       <children>
+                                          <Label layoutY="7.0" text="销售商：">
+                                             <font>
+                                                <Font size="20.0" />
+                                             </font>
+                                          </Label>
+                                          <TextField fx:id="sellerInCollection" editable="false" layoutX="100.0" prefHeight="40.0" prefWidth="268.0" />
+                                       </children>
+                                    </Pane>
+                                    <Pane layoutY="385.0">
+                                       <children>
+                                          <Pane>
+                                             <children>
+                                                <Label layoutY="7.0" text="总额汇总：">
+                                                   <font>
+                                                      <Font size="20.0" />
+                                                   </font>
+                                                </Label>
+                                                <TextField fx:id="sumInCollection" editable="false" focusTraversable="false" layoutX="100.0" text="0.0">
+                                                   <font>
+                                                      <Font size="20.0" />
+                                                   </font>
+                                                </TextField>
+                                             </children>
+                                          </Pane>
+                                          <Pane layoutX="478.0">
+                                             <children>
+                                                <Label layoutY="7.0" text="操作员：">
+                                                   <font>
+                                                      <Font size="20.0" />
+                                                   </font>
+                                                </Label>
+                                                <TextField fx:id="operatorInCollection" editable="false" focusTraversable="false" layoutX="100.0">
+                                                   <font>
+                                                      <Font size="20.0" />
+                                                   </font>
+                                                </TextField>
+                                             </children>
+                                          </Pane>
+                                       </children>
+                                    </Pane>
+                                    <Pane layoutX="184.0" layoutY="443.0">
+                                       <children>
+                                          <Button minHeight="-Infinity" mnemonicParsing="false" onAction="#cancel" onMouseEntered="#buttonEnterEffect" onMouseExited="#buttonExitEffect" onMousePressed="#buttonPressEffect" style="-fx-background-color: null; -fx-border-color: rgba(0,0,0, 0.15, 0.5, 0.5);" text="取消">
+                                             <font>
+                                                <Font size="18.0" />
+                                             </font>
+                                             <tooltip>
+                                                <Tooltip text="取消" />
+                                             </tooltip>
+                                          </Button>
+                                          <Button defaultButton="true" layoutX="418.0" minHeight="-Infinity" mnemonicParsing="false" onAction="#sure" onMouseEntered="#buttonEnterEffect" onMouseExited="#buttonExitEffect" onMousePressed="#buttonPressEffect" style="-fx-background-color: null; -fx-border-color: rgba(0,0,0, 0.15, 0.5, 0.5);" text="确认">
+                                             <font>
+                                                <Font size="18.0" />
+                                             </font>
+                                             <tooltip>
+                                                <Tooltip text="确认" />
+                                             </tooltip>
+                                          </Button>
+                                       </children>
+                                    </Pane>
+                                    <Pane layoutY="60.0">
+                                       <children>
+                                          <Label layoutY="1.0" text="转账列表：">
+                                             <font>
+                                                <Font size="20.0" />
+                                             </font>
+                                          </Label>
+                                          <TableView fx:id="tableInCollection" editable="true" layoutX="100.0" layoutY="-1.0" prefHeight="304.0" prefWidth="747.0" style="-fx-font-size: 16;" stylesheets="@../TableViewCSS.css">
+                                             <columns>
+                                                <TableColumn fx:id="nameColumnInCollection" editable="false" prefWidth="265.0" text="账户名称" />
+                                                <TableColumn fx:id="amountColumnInCollection" editable="false" prefWidth="213.0" text="转账金额" />
+                                                <TableColumn fx:id="commentColumnInCollection" editable="false" prefWidth="259.0" sortable="false" text="备注" />
+                                             </columns>
+                                          </TableView>
+                                       </children>
+                                    </Pane>
+                                    <Pane>
+                                       <children>
+                                          <Label layoutY="7.0" text="供应商：">
+                                             <font>
+                                                <Font size="20.0" />
+                                             </font>
+                                          </Label>
+                                          <TextField fx:id="supplierInCollection" editable="false" layoutX="100.0" prefHeight="40.0" prefWidth="268.0" />
+                                       </children>
+                                    </Pane>
+                                 </children>
+                              </Pane>
+                              <Pane layoutX="97.0" layoutY="22.0">
+                                 <children>
+                                    <Label layoutY="7.0" text="单据编号：">
+                                       <font>
+                                          <Font size="20.0" />
+                                       </font>
+                                    </Label>
+                                    <TextField fx:id="idInCollection" editable="false" layoutX="100.0" prefHeight="40.0" prefWidth="746.0" />
+                                 </children>
+                              </Pane>
+                           </children>
+                        </AnchorPane>
+                     </content>
+                  </Tab>
+                  <Tab text="付款单">
+                     <content>
+                        <AnchorPane>
+                           <children>
+                              <Pane layoutX="97.0" layoutY="82.0">
+                                 <children>
+                                    <Pane layoutX="478.0">
+                                       <children>
+                                          <Label layoutY="7.0" text="销售商：">
+                                             <font>
+                                                <Font size="20.0" />
+                                             </font>
+                                          </Label>
+                                          <TextField fx:id="sellerInPayment" editable="false" layoutX="100.0" prefHeight="40.0" prefWidth="268.0" />
+                                       </children>
+                                    </Pane>
+                                    <Pane layoutY="385.0">
+                                       <children>
+                                          <Pane>
+                                             <children>
+                                                <Label layoutY="7.0" text="总额汇总：">
+                                                   <font>
+                                                      <Font size="20.0" />
+                                                   </font>
+                                                </Label>
+                                                <TextField fx:id="sumInPayment" editable="false" focusTraversable="false" layoutX="100.0" text="0.0">
+                                                   <font>
+                                                      <Font size="20.0" />
+                                                   </font>
+                                                </TextField>
+                                             </children>
+                                          </Pane>
+                                          <Pane layoutX="478.0">
+                                             <children>
+                                                <Label layoutY="7.0" text="操作员：">
+                                                   <font>
+                                                      <Font size="20.0" />
+                                                   </font>
+                                                </Label>
+                                                <TextField fx:id="operatorInPayment" editable="false" focusTraversable="false" layoutX="100.0">
+                                                   <font>
+                                                      <Font size="20.0" />
+                                                   </font>
+                                                </TextField>
+                                             </children>
+                                          </Pane>
+                                       </children>
+                                    </Pane>
+                                    <Pane layoutX="184.0" layoutY="443.0">
+                                       <children>
+                                          <Button minHeight="-Infinity" mnemonicParsing="false" onAction="#cancel" onMouseEntered="#buttonEnterEffect" onMouseExited="#buttonExitEffect" onMousePressed="#buttonPressEffect" style="-fx-background-color: null; -fx-border-color: rgba(0,0,0, 0.15, 0.5, 0.5);" text="取消">
+                                             <font>
+                                                <Font size="18.0" />
+                                             </font>
+                                             <tooltip>
+                                                <Tooltip text="取消" />
+                                             </tooltip>
+                                          </Button>
+                                          <Button defaultButton="true" layoutX="418.0" minHeight="-Infinity" mnemonicParsing="false" onAction="#sure" onMouseEntered="#buttonEnterEffect" onMouseExited="#buttonExitEffect" onMousePressed="#buttonPressEffect" style="-fx-background-color: null; -fx-border-color: rgba(0,0,0, 0.15, 0.5, 0.5);" text="确认">
+                                             <font>
+                                                <Font size="18.0" />
+                                             </font>
+                                             <tooltip>
+                                                <Tooltip text="确认" />
+                                             </tooltip>
+                                          </Button>
+                                       </children>
+                                    </Pane>
+                                    <Pane layoutY="60.0">
+                                       <children>
+                                          <Label layoutY="1.0" text="转账列表：">
+                                             <font>
+                                                <Font size="20.0" />
+                                             </font>
+                                          </Label>
+                                          <TableView fx:id="tableInPayment" editable="true" layoutX="100.0" layoutY="-1.0" prefHeight="304.0" prefWidth="747.0" style="-fx-font-size: 16;" stylesheets="@../TableViewCSS.css">
+                                             <columns>
+                                                <TableColumn fx:id="nameColumnInPayment" editable="false" prefWidth="265.0" text="账户名称" />
+                                                <TableColumn fx:id="amountColumnInPayment" editable="false" prefWidth="213.0" text="转账金额" />
+                                                <TableColumn fx:id="commentColumnInPayment" editable="false" prefWidth="259.0" sortable="false" text="备注" />
+                                             </columns>
+                                          </TableView>
+                                       </children>
+                                    </Pane>
+                                    <Pane>
+                                       <children>
+                                          <Label layoutY="7.0" text="供应商：">
+                                             <font>
+                                                <Font size="20.0" />
+                                             </font>
+                                          </Label>
+                                          <TextField fx:id="supplierInPayment" editable="false" layoutX="100.0" prefHeight="40.0" prefWidth="268.0" />
+                                       </children>
+                                    </Pane>
+                                 </children>
+                              </Pane>
+                              <Pane layoutX="97.0" layoutY="22.0">
+                                 <children>
+                                    <Label layoutY="7.0" text="单据编号：">
+                                       <font>
+                                          <Font size="20.0" />
+                                       </font>
+                                    </Label>
+                                    <TextField fx:id="idInPayment" editable="false" layoutX="100.0" prefHeight="40.0" prefWidth="746.0" />
+                                 </children>
+                              </Pane>
+                           </children>
+                        </AnchorPane>
+                     </content>
+                  </Tab>
+                  <Tab text="现金费用单">
+                    <content>
+                      <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                           <children>
+                              <Pane layoutX="96.0" layoutY="14.0">
+                                 <children>
+                                    <Pane layoutX="2.0" layoutY="461.0">
+                                       <children>
+                                          <Pane>
+                                             <children>
+                                                <Label layoutY="7.0" text="总额汇总：">
+                                                   <font>
+                                                      <Font size="20.0" />
+                                                   </font>
+                                                </Label>
+                                                <TextField fx:id="sumInCashBill" editable="false" focusTraversable="false" layoutX="100.0" text="0.0">
+                                                   <font>
+                                                      <Font size="20.0" />
+                                                   </font>
+                                                </TextField>
+                                             </children>
+                                          </Pane>
+                                          <Pane layoutX="478.0">
+                                             <children>
+                                                <Label layoutY="7.0" text="操作员：">
+                                                   <font>
+                                                      <Font size="20.0" />
+                                                   </font>
+                                                </Label>
+                                                <TextField fx:id="operatorInCashBill" editable="false" focusTraversable="false" layoutX="100.0">
+                                                   <font>
+                                                      <Font size="20.0" />
+                                                   </font>
+                                                </TextField>
+                                             </children>
+                                          </Pane>
+                                       </children>
+                                    </Pane>
+                                    <Pane layoutX="2.0" layoutY="120.0">
+                                       <children>
+                                          <Label layoutY="1.0" text="条目清单：">
+                                             <font>
+                                                <Font size="20.0" />
+                                             </font>
+                                          </Label>
+                                          <TableView fx:id="tableInCashBill" editable="true" layoutX="100.0" layoutY="-1.0" prefHeight="320.0" prefWidth="747.0" style="-fx-font-size: 16;" stylesheets="@../TableViewCSS.css">
+                                             <columns>
+                                                <TableColumn fx:id="nameColumnInCashBill" editable="false" prefWidth="265.0" text="条目名" />
+                                                <TableColumn fx:id="amountColumnInCashBill" editable="false" prefWidth="213.0" text="金额" />
+                                                <TableColumn fx:id="commentColumnInCashBill" editable="false" prefWidth="259.0" sortable="false" text="备注" />
+                                             </columns>
+                                          </TableView>
+                                       </children>
+                                    </Pane>
+                                    <Pane layoutX="185.0" layoutY="522.0">
+                                       <children>
+                                          <Button defaultButton="true" layoutX="418.0" minHeight="-Infinity" mnemonicParsing="false" onAction="#sure" onMouseEntered="#buttonEnterEffect" onMouseExited="#buttonExitEffect" onMousePressed="#buttonPressEffect" style="-fx-background-color: null; -fx-border-color: rgba(0,0,0, 0.15, 0.5, 0.5);" text="确认">
+                                             <font>
+                                                <Font size="18.0" />
+                                             </font>
+                                             <tooltip>
+                                                <Tooltip text="确认" />
+                                             </tooltip>
+                                          </Button>
+                                          <Button minHeight="-Infinity" mnemonicParsing="false" onAction="#cancel" onMouseEntered="#buttonEnterEffect" onMouseExited="#buttonExitEffect" onMousePressed="#buttonPressEffect" style="-fx-background-color: null; -fx-border-color: rgba(0,0,0, 0.15, 0.5, 0.5);" text="取消">
+                                             <font>
+                                                <Font size="18.0" />
+                                             </font>
+                                             <tooltip>
+                                                <Tooltip text="取消" />
+                                             </tooltip>
+                                          </Button>
+                                       </children>
+                                    </Pane>
+                                    <Pane layoutX="1.0" layoutY="57.0">
+                                       <children>
+                                          <Label layoutY="7.0" text="银行账户：">
+                                             <font>
+                                                <Font size="20.0" />
+                                             </font>
+                                          </Label>
+                                          <TextField fx:id="bankAccountInCashBill" layoutX="100.0" prefHeight="40.0" prefWidth="748.0" />
+                                       </children>
+                                    </Pane>
+                                    <Pane layoutX="1.0">
+                                       <children>
+                                          <Label layoutY="7.0" text="单据编号：">
+                                             <font>
+                                                <Font size="20.0" />
+                                             </font>
+                                          </Label>
+                                          <TextField fx:id="idInCashBill" editable="false" layoutX="100.0" prefHeight="40.0" prefWidth="748.0" />
+                                       </children>
+                                    </Pane>
+                                 </children>
+                              </Pane>
+                           </children>
+                        </AnchorPane>
+                    </content>
+                  </Tab>
+                  <Tab text="进货单">
+                    <content>
+                      <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                           <children>
+                              <Pane layoutX="52.0" layoutY="78.0">
+                                 <children>
+                                    <Label layoutY="7.0" text="单据编号：">
+                                       <font>
+                                          <Font size="20.0" />
+                                       </font>
+                                    </Label>
+                                    <TextField fx:id="idInGoodsInList" editable="false" layoutX="100.0" prefHeight="40.0" prefWidth="180.0" />
+                                 </children>
+                              </Pane>
+                              <Pane layoutX="52.0" layoutY="158.0">
+                                 <children>
+                                    <Label layoutY="7.0" text="供应商：">
+                                       <font>
+                                          <Font size="20.0" />
+                                       </font>
+                                    </Label>
+                                    <TextField fx:id="producerInGoodsInList" editable="false" layoutX="100.0" prefHeight="40.0" prefWidth="180.0" />
+                                 </children>
+                              </Pane>
+                              <Pane layoutX="52.0" layoutY="438.0">
+                                 <children>
+                                    <Label layoutY="7.0" text="总额：">
+                                       <font>
+                                          <Font size="20.0" />
+                                       </font>
+                                    </Label>
+                                    <TextField fx:id="totalpriceInGoodsInList" editable="false" layoutX="100.0" prefHeight="40.0" prefWidth="180.0" />
+                                 </children>
+                              </Pane>
+                              <Pane layoutX="52.0" layoutY="368.0">
+                                 <children>
+                                    <Label layoutY="7.0" text="备注：">
+                                       <font>
+                                          <Font size="20.0" />
+                                       </font>
+                                    </Label>
+                                    <TextField fx:id="commentInGoodsInList" editable="false" layoutX="100.0" prefHeight="40.0" prefWidth="180.0" />
+                                 </children>
+                              </Pane>
+                              <Pane layoutX="52.0" layoutY="228.0">
+                                 <children>
+                                    <Label layoutY="7.0" text="仓库：">
+                                       <font>
+                                          <Font size="20.0" />
+                                       </font>
+                                    </Label>
+                                    <TextField fx:id="warehouseInGoodsInList" editable="false" layoutX="100.0" prefHeight="40.0" prefWidth="180.0" />
+                                 </children>
+                              </Pane>
+                              <Pane layoutX="52.0" layoutY="298.0">
+                                 <children>
+                                    <Label layoutY="7.0" text="操作员：">
+                                       <font>
+                                          <Font size="20.0" />
+                                       </font>
+                                    </Label>
+                                    <TextField fx:id="operatorInGoodsInList" editable="false" layoutX="100.0" prefHeight="40.0" prefWidth="180.0" />
+                                 </children>
+                              </Pane>
+                              <TableView fx:id="tableInGoodsInList" editable="true" layoutX="399.0" layoutY="65.0" prefHeight="425.0" prefWidth="624.0" stylesheets="@../TableViewCSS.css">
+                                <columns>
+                                  <TableColumn fx:id="idColumnInGoodsInList" editable="false" prefWidth="100.0" text="ID" />
+                                    <TableColumn fx:id="nameColumnInGoodsInList" editable="false" prefWidth="100.0" text="名称" />
+                                    <TableColumn fx:id="versionColumnInGoodsInList" editable="false" prefWidth="90.0" text="型号" />
+                                    <TableColumn fx:id="amountColumnInGoodsInList" editable="false" prefWidth="90.0" text="数量" />
+                                    <TableColumn fx:id="bidColumnInGoodsInList" editable="false" prefWidth="90.0" text="单价" />
+                                    <TableColumn fx:id="commentColumnInGoodsInList" editable="false" prefWidth="143.0" text="备注" />
+                                </columns>
+                              </TableView>
+                              <Pane layoutX="280.0" layoutY="518.0">
+                                 <children>
+                                    <Button minHeight="-Infinity" mnemonicParsing="false" onAction="#cancel" onMouseEntered="#buttonEnterEffect" onMouseExited="#buttonExitEffect" onMousePressed="#buttonPressEffect" style="-fx-background-color: null; -fx-border-color: rgba(0,0,0, 0.15, 0.5, 0.5);" text="取消">
+                                       <font>
+                                          <Font size="18.0" />
+                                       </font>
+                                       <tooltip>
+                                          <Tooltip text="取消" />
+                                       </tooltip>
+                                    </Button>
+                                    <Button defaultButton="true" layoutX="418.0" minHeight="-Infinity" mnemonicParsing="false" onAction="#sure" onMouseEntered="#buttonEnterEffect" onMouseExited="#buttonExitEffect" onMousePressed="#buttonPressEffect" style="-fx-background-color: null; -fx-border-color: rgba(0,0,0, 0.15, 0.5, 0.5);" text="确认">
+                                       <font>
+                                          <Font size="18.0" />
+                                       </font>
+                                       <tooltip>
+                                          <Tooltip text="确认" />
+                                       </tooltip>
+                                    </Button>
+                                 </children>
+                              </Pane>
+                           </children>
+                        </AnchorPane>
+                    </content>
+                  </Tab>
+                  <Tab text="进货退货单">
+                     <content>
+                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                           <children>
+                              <Pane layoutX="52.0" layoutY="74.0">
+                                 <children>
+                                    <Label layoutY="7.0" text="单据编号：">
+                                       <font>
+                                          <Font size="20.0" />
+                                       </font>
+                                    </Label>
+                                    <TextField fx:id="idInGoodsInReturnList" editable="false" layoutX="100.0" prefHeight="40.0" prefWidth="180.0" />
+                                 </children>
+                              </Pane>
+                              <Pane layoutX="52.0" layoutY="154.0">
+                                 <children>
+                                    <Label layoutY="7.0" text="供应商：">
+                                       <font>
+                                          <Font size="20.0" />
+                                       </font>
+                                    </Label>
+                                    <TextField fx:id="producerInGoodsInReturnList" editable="false" layoutX="100.0" prefHeight="40.0" prefWidth="180.0" />
+                                 </children>
+                              </Pane>
+                              <Pane layoutX="52.0" layoutY="434.0">
+                                 <children>
+                                    <Label layoutY="7.0" text="总额：">
+                                       <font>
+                                          <Font size="20.0" />
+                                       </font>
+                                    </Label>
+                                    <TextField fx:id="totalpriceInGoodsInReturnList" editable="false" layoutX="100.0" prefHeight="40.0" prefWidth="180.0" />
+                                 </children>
+                              </Pane>
+                              <Pane layoutX="52.0" layoutY="364.0">
+                                 <children>
+                                    <Label layoutY="7.0" text="备注：">
+                                       <font>
+                                          <Font size="20.0" />
+                                       </font>
+                                    </Label>
+                                    <TextField fx:id="commentInGoodsInReturnList" editable="false" layoutX="100.0" prefHeight="40.0" prefWidth="180.0" />
+                                 </children>
+                              </Pane>
+                              <Pane layoutX="52.0" layoutY="224.0">
+                                 <children>
+                                    <Label layoutY="7.0" text="仓库：">
+                                       <font>
+                                          <Font size="20.0" />
+                                       </font>
+                                    </Label>
+                                    <TextField fx:id="warehouseInGoodsInReturnList" editable="false" layoutX="100.0" prefHeight="40.0" prefWidth="180.0" />
+                                 </children>
+                              </Pane>
+                              <Pane layoutX="52.0" layoutY="294.0">
+                                 <children>
+                                    <Label layoutY="7.0" text="操作员：">
+                                       <font>
+                                          <Font size="20.0" />
+                                       </font>
+                                    </Label>
+                                    <TextField fx:id="operatorInGoodsInReturnList" editable="false" layoutX="100.0" prefHeight="40.0" prefWidth="180.0" />
+                                 </children>
+                              </Pane>
+                              <TableView fx:id="tableInGoodsInReturnList" editable="true" layoutX="402.0" layoutY="67.0" prefHeight="407.0" prefWidth="624.0" stylesheets="@../TableViewCSS.css">
+                                 <columns>
+                                    <TableColumn fx:id="idColumnInGoodsInReturnList" editable="false" prefWidth="100.0" text="ID" />
+                                    <TableColumn fx:id="nameColumnInGoodsInReturnList" editable="false" prefWidth="100.0" text="名称" />
+                                    <TableColumn fx:id="versionColumnInGoodsInReturnList" editable="false" prefWidth="90.0" text="型号" />
+                                    <TableColumn fx:id="amountColumnInGoodsInReturnList" editable="false" prefWidth="90.0" text="数量" />
+                                    <TableColumn fx:id="bidColumnInGoodsInReturnList" editable="false" prefWidth="90.0" text="单价" />
+                                    <TableColumn fx:id="commentColumnInGoodsInReturnList" editable="false" prefWidth="143.0" text="备注" />
+                                 </columns>
+                              </TableView>
+                              <Pane layoutX="280.0" layoutY="518.0">
+                                 <children>
+                                    <Button minHeight="-Infinity" mnemonicParsing="false" onAction="#cancel" onMouseEntered="#buttonEnterEffect" onMouseExited="#buttonExitEffect" onMousePressed="#buttonPressEffect" style="-fx-background-color: null; -fx-border-color: rgba(0,0,0, 0.15, 0.5, 0.5);" text="取消">
+                                       <font>
+                                          <Font size="18.0" />
+                                       </font>
+                                       <tooltip>
+                                          <Tooltip text="取消" />
+                                       </tooltip>
+                                    </Button>
+                                    <Button defaultButton="true" layoutX="418.0" minHeight="-Infinity" mnemonicParsing="false" onAction="#sure" onMouseEntered="#buttonEnterEffect" onMouseExited="#buttonExitEffect" onMousePressed="#buttonPressEffect" style="-fx-background-color: null; -fx-border-color: rgba(0,0,0, 0.15, 0.5, 0.5);" text="确认">
+                                       <font>
+                                          <Font size="18.0" />
+                                       </font>
+                                       <tooltip>
+                                          <Tooltip text="确认" />
+                                       </tooltip>
+                                    </Button>
+                                 </children>
+                              </Pane>
+                           </children>
+                        </AnchorPane>
+                     </content>
+                  </Tab>
+                  <Tab text="销售单">
+                     <content>
+                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                           <children>
+                              <Pane layoutX="52.0" layoutY="76.0">
+                                 <children>
+                                    <Label layoutY="7.0" text="单据编号：">
+                                       <font>
+                                          <Font size="20.0" />
+                                       </font>
+                                    </Label>
+                                    <TextField fx:id="idInSaleList" editable="false" layoutX="100.0" prefHeight="40.0" prefWidth="180.0" />
+                                 </children>
+                              </Pane>
+                              <Pane layoutX="52.0" layoutY="156.0">
+                                 <children>
+                                    <Label layoutY="7.0" text="销售商：">
+                                       <font>
+                                          <Font size="20.0" />
+                                       </font>
+                                    </Label>
+                                    <TextField fx:id="sellerInSaleList" editable="false" layoutX="100.0" prefHeight="40.0" prefWidth="180.0" />
+                                 </children>
+                              </Pane>
+                              <Pane layoutX="52.0" layoutY="436.0">
+                                 <children>
+                                    <Label layoutY="7.0" text="总额：">
+                                       <font>
+                                          <Font size="20.0" />
+                                       </font>
+                                    </Label>
+                                    <TextField fx:id="totalpriceInSaleList" editable="false" layoutX="100.0" prefHeight="40.0" prefWidth="180.0" />
+                                 </children>
+                              </Pane>
+                              <Pane layoutX="52.0" layoutY="366.0">
+                                 <children>
+                                    <Label layoutY="7.0" text="备注：">
+                                       <font>
+                                          <Font size="20.0" />
+                                       </font>
+                                    </Label>
+                                    <TextField fx:id="commentInSaleList" editable="false" layoutX="100.0" prefHeight="40.0" prefWidth="180.0" />
+                                 </children>
+                              </Pane>
+                              <Pane layoutX="52.0" layoutY="226.0">
+                                 <children>
+                                    <Label layoutY="7.0" text="仓库：">
+                                       <font>
+                                          <Font size="20.0" />
+                                       </font>
+                                    </Label>
+                                    <TextField fx:id="warehouseInSaleList" editable="false" layoutX="100.0" prefHeight="40.0" prefWidth="180.0" />
+                                 </children>
+                              </Pane>
+                              <Pane layoutX="52.0" layoutY="296.0">
+                                 <children>
+                                    <Label layoutY="7.0" text="操作员：">
+                                       <font>
+                                          <Font size="20.0" />
+                                       </font>
+                                    </Label>
+                                    <TextField fx:id="operatorInSaleList" editable="false" layoutX="100.0" prefHeight="40.0" prefWidth="180.0" />
+                                 </children>
+                              </Pane>
+                              <TableView fx:id="tableInSaleList" editable="true" layoutX="399.0" layoutY="65.0" prefHeight="419.0" prefWidth="624.0" stylesheets="@../TableViewCSS.css">
+                                 <columns>
+                                    <TableColumn fx:id="idColumnInSaleList" editable="false" prefWidth="100.0" text="ID" />
+                                    <TableColumn fx:id="nameColumnInSaleList" editable="false" prefWidth="100.0" text="名称" />
+                                    <TableColumn fx:id="versionColumnInSaleList" editable="false" prefWidth="90.0" text="型号" />
+                                    <TableColumn fx:id="amountColumnInSaleList" editable="false" prefWidth="90.0" text="数量" />
+                                    <TableColumn fx:id="bidColumnInSaleList" editable="false" prefWidth="90.0" text="单价" />
+                                    <TableColumn fx:id="commentColumnInSaleList" editable="false" prefWidth="141.0" text="备注" />
+                                 </columns>
+                              </TableView>
+                              <Pane layoutX="280.0" layoutY="518.0">
+                                 <children>
+                                    <Button minHeight="-Infinity" mnemonicParsing="false" onAction="#cancel" onMouseEntered="#buttonEnterEffect" onMouseExited="#buttonExitEffect" onMousePressed="#buttonPressEffect" style="-fx-background-color: null; -fx-border-color: rgba(0,0,0, 0.15, 0.5, 0.5);" text="取消">
+                                       <font>
+                                          <Font size="18.0" />
+                                       </font>
+                                       <tooltip>
+                                          <Tooltip text="取消" />
+                                       </tooltip>
+                                    </Button>
+                                    <Button defaultButton="true" layoutX="418.0" minHeight="-Infinity" mnemonicParsing="false" onAction="#sure" onMouseEntered="#buttonEnterEffect" onMouseExited="#buttonExitEffect" onMousePressed="#buttonPressEffect" style="-fx-background-color: null; -fx-border-color: rgba(0,0,0, 0.15, 0.5, 0.5);" text="确认">
+                                       <font>
+                                          <Font size="18.0" />
+                                       </font>
+                                       <tooltip>
+                                          <Tooltip text="确认" />
+                                       </tooltip>
+                                    </Button>
+                                 </children>
+                              </Pane>
+                           </children>
+                        </AnchorPane>
+                     </content>
+                  </Tab>
+                  <Tab text="销售退货单">
+                     <content>
+                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                           <children>
+                              <Pane layoutX="61.0" layoutY="76.0">
+                                 <children>
+                                    <Label layoutY="7.0" text="单据编号：">
+                                       <font>
+                                          <Font size="20.0" />
+                                       </font>
+                                    </Label>
+                                    <TextField fx:id="idInSaleReturnList" editable="false" layoutX="100.0" prefHeight="40.0" prefWidth="180.0" />
+                                 </children>
+                              </Pane>
+                              <Pane layoutX="61.0" layoutY="156.0">
+                                 <children>
+                                    <Label layoutY="7.0" text="销售商：">
+                                       <font>
+                                          <Font size="20.0" />
+                                       </font>
+                                    </Label>
+                                    <TextField fx:id="sellerInSaleReturnList" editable="false" layoutX="100.0" prefHeight="40.0" prefWidth="180.0" />
+                                 </children>
+                              </Pane>
+                              <Pane layoutX="61.0" layoutY="436.0">
+                                 <children>
+                                    <Label layoutY="7.0" text="总额：">
+                                       <font>
+                                          <Font size="20.0" />
+                                       </font>
+                                    </Label>
+                                    <TextField fx:id="totalpriceInSaleReturnList" editable="false" layoutX="100.0" prefHeight="40.0" prefWidth="180.0" />
+                                 </children>
+                              </Pane>
+                              <Pane layoutX="61.0" layoutY="366.0">
+                                 <children>
+                                    <Label layoutY="7.0" text="备注：">
+                                       <font>
+                                          <Font size="20.0" />
+                                       </font>
+                                    </Label>
+                                    <TextField fx:id="commentInSaleReturnList" editable="false" layoutX="100.0" prefHeight="40.0" prefWidth="180.0" />
+                                 </children>
+                              </Pane>
+                              <Pane layoutX="61.0" layoutY="226.0">
+                                 <children>
+                                    <Label layoutY="7.0" text="仓库：">
+                                       <font>
+                                          <Font size="20.0" />
+                                       </font>
+                                    </Label>
+                                    <TextField fx:id="warehouseInSaleReturnList" editable="false" layoutX="100.0" prefHeight="40.0" prefWidth="180.0" />
+                                 </children>
+                              </Pane>
+                              <Pane layoutX="61.0" layoutY="296.0">
+                                 <children>
+                                    <Label layoutY="7.0" text="操作员：">
+                                       <font>
+                                          <Font size="20.0" />
+                                       </font>
+                                    </Label>
+                                    <TextField fx:id="operatorInSaleReturnList" editable="false" layoutX="100.0" prefHeight="40.0" prefWidth="180.0" />
+                                 </children>
+                              </Pane>
+                              <TableView fx:id="tableInSaleReturnList" editable="true" layoutX="399.0" layoutY="65.0" prefHeight="411.0" prefWidth="624.0" stylesheets="@../TableViewCSS.css">
+                                 <columns>
+                                    <TableColumn fx:id="idColumnInSaleReturnList" editable="false" prefWidth="100.0" text="ID" />
+                                    <TableColumn fx:id="nameColumnInSaleReturnList" editable="false" prefWidth="100.0" text="名称" />
+                                    <TableColumn fx:id="versionColumnInSaleReturnList" editable="false" prefWidth="90.0" text="型号" />
+                                    <TableColumn fx:id="amountColumnInSaleReturnList" editable="false" prefWidth="90.0" text="数量" />
+                                    <TableColumn fx:id="bidColumnInSaleReturnList" editable="false" prefWidth="90.0" text="单价" />
+                                    <TableColumn fx:id="commentColumnInSaleReturnList" editable="false" prefWidth="142.0" text="备注" />
+                                 </columns>
+                              </TableView>
+                              <Pane layoutX="280.0" layoutY="512.0">
+                                 <children>
+                                    <Button minHeight="-Infinity" mnemonicParsing="false" onAction="#cancel" onMouseEntered="#buttonEnterEffect" onMouseExited="#buttonExitEffect" onMousePressed="#buttonPressEffect" style="-fx-background-color: null; -fx-border-color: rgba(0,0,0, 0.15, 0.5, 0.5);" text="取消">
+                                       <font>
+                                          <Font size="18.0" />
+                                       </font>
+                                       <tooltip>
+                                          <Tooltip text="取消" />
+                                       </tooltip>
+                                    </Button>
+                                    <Button defaultButton="true" layoutX="418.0" minHeight="-Infinity" mnemonicParsing="false" onAction="#sure" onMouseEntered="#buttonEnterEffect" onMouseExited="#buttonExitEffect" onMousePressed="#buttonPressEffect" style="-fx-background-color: null; -fx-border-color: rgba(0,0,0, 0.15, 0.5, 0.5);" text="确认">
+                                       <font>
+                                          <Font size="18.0" />
+                                       </font>
+                                       <tooltip>
+                                          <Tooltip text="确认" />
+                                       </tooltip>
+                                    </Button>
+                                 </children>
+                              </Pane>
+                           </children>
+                        </AnchorPane>
+                     </content>
+                  </Tab>
+                  <Tab text="库存报溢单">
+                    <content>
+                      <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                           <children>
+                              <Pane layoutX="43.0" layoutY="234.0">
+                                 <children>
+                                    <Label layoutY="7.0" text="商品名：">
+                                       <font>
+                                          <Font size="20.0" />
+                                       </font>
+                                    </Label>
+                                    <TextField fx:id="goodsnameInOverflowList" editable="false" layoutX="100.0" prefHeight="40.0" prefWidth="823.0" />
+                                 </children>
+                              </Pane>
+                              <Pane layoutX="43.0" layoutY="136.0">
+                                 <children>
+                                    <Label layoutY="7.0" text="商品ID：">
+                                       <font>
+                                          <Font size="20.0" />
+                                       </font>
+                                    </Label>
+                                    <TextField fx:id="goodsidInOverflowList" editable="false" layoutX="100.0" prefHeight="40.0" prefWidth="823.0" />
+                                 </children>
+                              </Pane>
+                              <Pane layoutX="43.0" layoutY="57.0">
+                                 <children>
+                                    <Label layoutY="7.0" text="单据ID：">
+                                       <font>
+                                          <Font size="20.0" />
+                                       </font>
+                                    </Label>
+                                    <TextField fx:id="idInOverflowList" editable="false" layoutX="100.0" prefHeight="40.0" prefWidth="823.0" />
+                                 </children>
+                              </Pane>
+                              <Pane layoutX="43.0" layoutY="341.0">
+                                 <children>
+                                    <Label layoutY="7.0" text="报溢数量：">
+                                       <font>
+                                          <Font size="20.0" />
+                                       </font>
+                                    </Label>
+                                    <TextField fx:id="amountInOverflowList" editable="false" layoutX="100.0" prefHeight="40.0" prefWidth="823.0" />
+                                 </children>
+                              </Pane>
+                              <Pane layoutX="280.0" layoutY="518.0">
+                                 <children>
+                                    <Button minHeight="-Infinity" mnemonicParsing="false" onAction="#cancel" onMouseEntered="#buttonEnterEffect" onMouseExited="#buttonExitEffect" onMousePressed="#buttonPressEffect" style="-fx-background-color: null; -fx-border-color: rgba(0,0,0, 0.15, 0.5, 0.5);" text="取消">
+                                       <font>
+                                          <Font size="18.0" />
+                                       </font>
+                                       <tooltip>
+                                          <Tooltip text="取消" />
+                                       </tooltip>
+                                    </Button>
+                                    <Button defaultButton="true" layoutX="418.0" minHeight="-Infinity" mnemonicParsing="false" onAction="#sure" onMouseEntered="#buttonEnterEffect" onMouseExited="#buttonExitEffect" onMousePressed="#buttonPressEffect" style="-fx-background-color: null; -fx-border-color: rgba(0,0,0, 0.15, 0.5, 0.5);" text="确认">
+                                       <font>
+                                          <Font size="18.0" />
+                                       </font>
+                                       <tooltip>
+                                          <Tooltip text="确认" />
+                                       </tooltip>
+                                    </Button>
+                                 </children>
+                              </Pane>
+                           </children>
+                        </AnchorPane>
+                    </content>
+                  </Tab>
+                  <Tab text="库存报损单">
+                     <content>
+                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                           <children>
+                              <Pane layoutX="43.0" layoutY="234.0">
+                                 <children>
+                                    <Label layoutY="7.0" text="商品名：">
+                                       <font>
+                                          <Font size="20.0" />
+                                       </font>
+                                    </Label>
+                                    <TextField fx:id="goodsnameInDamageList" editable="false" layoutX="100.0" prefHeight="40.0" prefWidth="823.0" />
+                                 </children>
+                              </Pane>
+                              <Pane layoutX="43.0" layoutY="136.0">
+                                 <children>
+                                    <Label layoutY="7.0" text="商品ID：">
+                                       <font>
+                                          <Font size="20.0" />
+                                       </font>
+                                    </Label>
+                                    <TextField fx:id="goodsidInDamageList" editable="false" layoutX="100.0" prefHeight="40.0" prefWidth="823.0" />
+                                 </children>
+                              </Pane>
+                              <Pane layoutX="43.0" layoutY="57.0">
+                                 <children>
+                                    <Label layoutY="7.0" text="单据ID：">
+                                       <font>
+                                          <Font size="20.0" />
+                                       </font>
+                                    </Label>
+                                    <TextField fx:id="idInDamageList" editable="false" layoutX="100.0" prefHeight="40.0" prefWidth="823.0" />
+                                 </children>
+                              </Pane>
+                              <Pane layoutX="43.0" layoutY="341.0">
+                                 <children>
+                                    <Label layoutY="7.0" text="报损数量：">
+                                       <font>
+                                          <Font size="20.0" />
+                                       </font>
+                                    </Label>
+                                    <TextField fx:id="amountInDamageList" editable="false" layoutX="100.0" prefHeight="40.0" prefWidth="823.0" />
+                                 </children>
+                              </Pane>
+                              <Pane layoutX="280.0" layoutY="514.0">
+                                 <children>
+                                    <Button minHeight="-Infinity" mnemonicParsing="false" onAction="#cancel" onMouseEntered="#buttonEnterEffect" onMouseExited="#buttonExitEffect" onMousePressed="#buttonPressEffect" style="-fx-background-color: null; -fx-border-color: rgba(0,0,0, 0.15, 0.5, 0.5);" text="取消">
+                                       <font>
+                                          <Font size="18.0" />
+                                       </font>
+                                       <tooltip>
+                                          <Tooltip text="取消" />
+                                       </tooltip>
+                                    </Button>
+                                    <Button defaultButton="true" layoutX="418.0" minHeight="-Infinity" mnemonicParsing="false" onAction="#sure" onMouseEntered="#buttonEnterEffect" onMouseExited="#buttonExitEffect" onMousePressed="#buttonPressEffect" style="-fx-background-color: null; -fx-border-color: rgba(0,0,0, 0.15, 0.5, 0.5);" text="确认">
+                                       <font>
+                                          <Font size="18.0" />
+                                       </font>
+                                       <tooltip>
+                                          <Tooltip text="确认" />
+                                       </tooltip>
+                                    </Button>
+                                 </children>
+                              </Pane>
+                           </children>
+                        </AnchorPane>
+                     </content>
+                  </Tab>
+                  <Tab text="库存报警单">
+                     <content>
+                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                           <children>
+                              <Pane layoutX="43.0" layoutY="234.0">
+                                 <children>
+                                    <Label layoutY="7.0" text="商品名：">
+                                       <font>
+                                          <Font size="20.0" />
+                                       </font>
+                                    </Label>
+                                    <TextField fx:id="goodsnameInWarningList" editable="false" layoutX="100.0" prefHeight="40.0" prefWidth="823.0" />
+                                 </children>
+                              </Pane>
+                              <Pane layoutX="43.0" layoutY="136.0">
+                                 <children>
+                                    <Label layoutY="7.0" text="商品ID：">
+                                       <font>
+                                          <Font size="20.0" />
+                                       </font>
+                                    </Label>
+                                    <TextField fx:id="goodsidInWarningList" editable="false" layoutX="100.0" prefHeight="40.0" prefWidth="823.0" />
+                                 </children>
+                              </Pane>
+                              <Pane layoutX="43.0" layoutY="57.0">
+                                 <children>
+                                    <Label layoutY="7.0" text="单据ID：">
+                                       <font>
+                                          <Font size="20.0" />
+                                       </font>
+                                    </Label>
+                                    <TextField fx:id="idInWarningList" editable="false" layoutX="100.0" prefHeight="40.0" prefWidth="823.0" />
+                                 </children>
+                              </Pane>
+                              <Pane layoutX="43.0" layoutY="341.0">
+                                 <children>
+                                    <Label layoutY="7.0" text="警戒数量：">
+                                       <font>
+                                          <Font size="20.0" />
+                                       </font>
+                                    </Label>
+                                    <TextField fx:id="amountInWarningList" editable="false" layoutX="100.0" prefHeight="40.0" prefWidth="823.0" />
+                                 </children>
+                              </Pane>
+                              <Pane layoutX="280.0" layoutY="519.0">
+                                 <children>
+                                    <Button minHeight="-Infinity" mnemonicParsing="false" onAction="#cancel" onMouseEntered="#buttonEnterEffect" onMouseExited="#buttonExitEffect" onMousePressed="#buttonPressEffect" style="-fx-background-color: null; -fx-border-color: rgba(0,0,0, 0.15, 0.5, 0.5);" text="取消">
+                                       <font>
+                                          <Font size="18.0" />
+                                       </font>
+                                       <tooltip>
+                                          <Tooltip text="取消" />
+                                       </tooltip>
+                                    </Button>
+                                    <Button defaultButton="true" layoutX="418.0" minHeight="-Infinity" mnemonicParsing="false" onAction="#sure" onMouseEntered="#buttonEnterEffect" onMouseExited="#buttonExitEffect" onMousePressed="#buttonPressEffect" style="-fx-background-color: null; -fx-border-color: rgba(0,0,0, 0.15, 0.5, 0.5);" text="确认">
+                                       <font>
+                                          <Font size="18.0" />
+                                       </font>
+                                       <tooltip>
+                                          <Tooltip text="确认" />
+                                       </tooltip>
+                                    </Button>
+                                 </children>
+                              </Pane>
+                           </children>
+                        </AnchorPane>
+                     </content>
+                  </Tab>
+                  <Tab text="库存赠送单">
+                     <content>
+                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                           <children>
+                              <Pane layoutX="43.0" layoutY="234.0">
+                                 <children>
+                                    <Label layoutY="7.0" text="商品名：">
+                                       <font>
+                                          <Font size="20.0" />
+                                       </font>
+                                    </Label>
+                                    <TextField fx:id="goodsnameIngiftList" editable="false" layoutX="100.0" prefHeight="40.0" prefWidth="823.0" />
+                                 </children>
+                              </Pane>
+                              <Pane layoutX="43.0" layoutY="136.0">
+                                 <children>
+                                    <Label layoutY="7.0" text="商品ID：">
+                                       <font>
+                                          <Font size="20.0" />
+                                       </font>
+                                    </Label>
+                                    <TextField fx:id="goodsidIngiftList" editable="false" layoutX="100.0" prefHeight="40.0" prefWidth="823.0" />
+                                 </children>
+                              </Pane>
+                              <Pane layoutX="43.0" layoutY="57.0">
+                                 <children>
+                                    <Label layoutY="7.0" text="单据ID：">
+                                       <font>
+                                          <Font size="20.0" />
+                                       </font>
+                                    </Label>
+                                    <TextField fx:id="idIngiftList" editable="false" layoutX="100.0" prefHeight="40.0" prefWidth="823.0" />
+                                 </children>
+                              </Pane>
+                              <Pane layoutX="43.0" layoutY="341.0">
+                                 <children>
+                                    <Label layoutY="7.0" text="赠送数量：">
+                                       <font>
+                                          <Font size="20.0" />
+                                       </font>
+                                    </Label>
+                                    <TextField fx:id="amountIngiftList" editable="false" layoutX="100.0" prefHeight="40.0" prefWidth="823.0" />
+                                 </children>
+                              </Pane>
+                              <Pane layoutX="280.0" layoutY="523.0">
+                                 <children>
+                                    <Button minHeight="-Infinity" mnemonicParsing="false" onAction="#cancel" onMouseEntered="#buttonEnterEffect" onMouseExited="#buttonExitEffect" onMousePressed="#buttonPressEffect" style="-fx-background-color: null; -fx-border-color: rgba(0,0,0, 0.15, 0.5, 0.5);" text="取消">
+                                       <font>
+                                          <Font size="18.0" />
+                                       </font>
+                                       <tooltip>
+                                          <Tooltip text="取消" />
+                                       </tooltip>
+                                    </Button>
+                                    <Button defaultButton="true" layoutX="418.0" minHeight="-Infinity" mnemonicParsing="false" onAction="#sure" onMouseEntered="#buttonEnterEffect" onMouseExited="#buttonExitEffect" onMousePressed="#buttonPressEffect" style="-fx-background-color: null; -fx-border-color: rgba(0,0,0, 0.15, 0.5, 0.5);" text="确认">
+                                       <font>
+                                          <Font size="18.0" />
+                                       </font>
+                                       <tooltip>
+                                          <Tooltip text="确认" />
+                                       </tooltip>
+                                    </Button>
+                                 </children>
+                              </Pane>
+                           </children>
+                        </AnchorPane>
+                     </content>
+                  </Tab>
+               </tabs>
+            </TabPane>
+            <Rectangle fill="WHITE" height="40.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="1040.0" />
+         </children>
+      </AnchorPane>
+      <GridPane style="-fx-background-color: rgb(224,103,103);" GridPane.columnIndex="15" GridPane.rowIndex="2" GridPane.rowSpan="16" GridPane.valignment="TOP">
+         <children>
+            <Button fx:id="checkButton" disable="true" mnemonicParsing="false" onAction="#check" onMouseEntered="#buttonEnterEffect" onMouseExited="#buttonExitEffect" onMousePressed="#buttonPressEffect" style="-fx-background-color: null;" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="CENTER">
+               <graphic>
+                  <ImageView fitHeight="40.0" fitWidth="40.0">
+                     <image>
+                        <Image url="@../../../resources/确认.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <tooltip>
+                  <Tooltip text="审批" />
+               </tooltip>
+            </Button>
+            <Button fx:id="modifyButton" disable="true" mnemonicParsing="false" onAction="#modify" onMouseEntered="#buttonEnterEffect" onMouseExited="#buttonExitEffect" onMousePressed="#buttonPressEffect" style="-fx-background-color: null;" visible="false" GridPane.halignment="CENTER" GridPane.rowIndex="5" GridPane.valignment="CENTER">
+               <graphic>
+                  <ImageView fitHeight="40.0" fitWidth="40.0">
+                     <image>
+                        <Image url="@../../../resources/修改.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <tooltip>
+                  <Tooltip text="修改单据数据" />
+               </tooltip>
+            </Button>
+            <Button mnemonicParsing="false" onAction="#refresh" onMouseEntered="#buttonEnterEffect" onMouseExited="#buttonExitEffect" onMousePressed="#buttonPressEffect" style="-fx-background-color: null;" GridPane.halignment="CENTER" GridPane.rowIndex="3" GridPane.valignment="CENTER">
+               <graphic>
+                  <ImageView fitHeight="40.0" fitWidth="40.0">
+                     <image>
+                        <Image url="@../../../resources/刷新.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <tooltip>
+                  <Tooltip text="修改单据数据" />
+               </tooltip>
+            </Button>
+         </children>
+         <columnConstraints>
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+         </columnConstraints>
+         <rowConstraints>
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+         </rowConstraints>
+      </GridPane>
+   </children>
+   <columnConstraints>
+      <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+      <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+      <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+      <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+      <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+      <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+      <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+      <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+      <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+      <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+      <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+      <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+      <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+      <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+      <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+      <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+   </columnConstraints>
+   <rowConstraints>
+      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+   </rowConstraints>
+</GridPane>

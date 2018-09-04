@@ -1,0 +1,314 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+<?import com.jfoenix.controls.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.collections.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+
+<GridPane alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="720.0" prefWidth="1280.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="main.Presentation.StockManagerUI.GoodsManageFrame">
+  <columnConstraints>
+      <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+      <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+      <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+      <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+      <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+      <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+      <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+      <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+      <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+      <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+      <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+      <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+      <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+      <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+      <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+    <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+  </columnConstraints>
+  <rowConstraints>
+      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+  </rowConstraints>
+   <children>
+      <Label text="商品管理" GridPane.columnIndex="2" GridPane.columnSpan="14" GridPane.halignment="CENTER" GridPane.rowSpan="2">
+         <font>
+            <Font size="28.0" />
+         </font>
+      </Label>
+      <GridPane prefHeight="184.0" prefWidth="123.0" style="-fx-background-color: rgb(224,103,103);" GridPane.columnSpan="2" GridPane.rowSpan="18">
+        <columnConstraints>
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+        </columnConstraints>
+        <rowConstraints>
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <Button mnemonicParsing="false" onAction="#returnStockManagerHomeHandle" onMouseEntered="#buttonEnterEffect" onMouseExited="#buttonExitEffect" onMousePressed="#buttonPressEffect" style="-fx-background-color: null;" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="16" GridPane.valignment="CENTER">
+               <graphic>
+                  <ImageView fitHeight="40.0" fitWidth="40.0">
+                     <image>
+                        <Image url="@../../../resources/返回.png" />
+                     </image>
+                  </ImageView>
+               </graphic></Button>
+            <Circle fill="WHITE" radius="68.0" stroke="#ffffff00" strokeType="INSIDE" strokeWidth="0.0" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="2" GridPane.valignment="CENTER" />
+            <Button mnemonicParsing="false" onAction="#returnStockManagerHomeHandle" onMouseEntered="#buttonEnterEffect" onMouseExited="#buttonExitEffect" onMousePressed="#buttonPressEffect" style="-fx-background-color: null;" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="14" GridPane.valignment="CENTER">
+               <graphic>
+                  <ImageView fitHeight="40.0" fitWidth="40.0">
+                     <image>
+                        <Image url="@../../../resources/主界面.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <Label GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="2" GridPane.valignment="CENTER">
+               <graphic>
+                  <ImageView fx:id="head" fitHeight="136.0" fitWidth="136.0" pickOnBounds="true" preserveRatio="true" />
+               </graphic>
+               <tooltip>
+                  <Tooltip text="用户信息" />
+               </tooltip>
+            </Label>
+            <Button mnemonicParsing="false" onAction="#changetomanage" onMouseEntered="#buttonEnterEffect" onMouseExited="#buttonExitEffect" onMousePressed="#buttonPressEffect" prefHeight="30.0" prefWidth="157.0" style="-fx-background-color: null;" text="商品管理" GridPane.columnSpan="3" GridPane.halignment="CENTER" GridPane.rowIndex="5" GridPane.valignment="CENTER">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Button>
+            <Button mnemonicParsing="false" onAction="#changetotable" onMouseEntered="#buttonEnterEffect" onMouseExited="#buttonExitEffect" onMousePressed="#buttonPressEffect" prefHeight="30.0" prefWidth="157.0" style="-fx-background-color: null;" text="商品列表" GridPane.columnSpan="3" GridPane.halignment="CENTER" GridPane.rowIndex="6" GridPane.valignment="CENTER">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Button>
+         </children>
+      </GridPane>
+      <Line endX="1120.0" GridPane.columnIndex="2" GridPane.columnSpan="14" GridPane.rowIndex="1" GridPane.valignment="BOTTOM" />
+      <Button maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#minimize" onMouseEntered="#buttonEnterEffect" onMouseExited="#buttonExitEffect" onMousePressed="#buttonPressEffect" prefHeight="30.0" prefWidth="40.0" style="-fx-background-color: null;" GridPane.columnIndex="15" GridPane.halignment="LEFT" GridPane.valignment="TOP">
+         <graphic>
+            <ImageView fitHeight="30.0" fitWidth="30.0">
+               <image>
+                  <Image url="@../../../resources/最小化.png" />
+               </image>
+            </ImageView>
+         </graphic></Button>
+      <Button maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#exit" onMouseEntered="#buttonEnterEffect" onMouseExited="#buttonExitEffect" onMousePressed="#buttonPressEffect" prefHeight="30.0" prefWidth="40.0" style="-fx-background-color: null;" GridPane.columnIndex="15" GridPane.halignment="RIGHT" GridPane.valignment="TOP">
+         <graphic>
+            <ImageView fitHeight="30.0" fitWidth="30.0">
+               <image>
+                  <Image url="@../../../resources/关闭.png" />
+               </image>
+            </ImageView>
+         </graphic></Button>
+      <AnchorPane prefHeight="631.0" prefWidth="1131.0" GridPane.columnIndex="2" GridPane.columnSpan="14" GridPane.rowIndex="2" GridPane.rowSpan="16">
+         <children>
+            <TabPane fx:id="tabpane" layoutY="17.0" prefHeight="623.0" prefWidth="1121.0" tabClosingPolicy="UNAVAILABLE">
+              <tabs>
+                <Tab fx:id="manageinfo" text="商品管理">
+                  <content>
+                    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                           <children>
+                              <GridPane layoutX="1031.0" prefHeight="601.0" prefWidth="90.0" style="-fx-background-color: rgb(224,103,103);">
+                                <columnConstraints>
+                                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                </columnConstraints>
+                                <rowConstraints>
+                                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                </rowConstraints>
+                                 <children>
+                                    <Button fx:id="modifygood" disable="true" mnemonicParsing="false" onAction="#modifygoodHandle" onMouseEntered="#buttonEnterEffect" onMouseExited="#buttonExitEffect" onMousePressed="#buttonPressEffect" style="-fx-background-color: null;" GridPane.halignment="CENTER" GridPane.rowIndex="3" GridPane.valignment="CENTER">
+                                       <graphic>
+                                          <ImageView fitHeight="30.0" fitWidth="30.0">
+                                             <image>
+                                                <Image url="@../../../resources/修改.png" />
+                                             </image>
+                                          </ImageView>
+                                       </graphic>
+                                    </Button>
+                                    <Button fx:id="deletegoods" disable="true" mnemonicParsing="false" onAction="#deletegoodsHandle" onMouseEntered="#buttonEnterEffect" onMouseExited="#buttonExitEffect" onMousePressed="#buttonPressEffect" style="-fx-background-color: null;" GridPane.halignment="CENTER" GridPane.rowIndex="7" GridPane.valignment="CENTER">
+                                       <graphic>
+                                          <ImageView fitHeight="30.0" fitWidth="30.0">
+                                             <image>
+                                                <Image url="@../../../resources/删除.png" />
+                                             </image>
+                                          </ImageView>
+                                       </graphic>
+                                    </Button>
+                                    <Button fx:id="addgood" disable="true" mnemonicParsing="false" onAction="#addgoodHandle" onMouseEntered="#buttonEnterEffect" onMouseExited="#buttonExitEffect" onMousePressed="#buttonPressEffect" style="-fx-background-color: null;" GridPane.halignment="CENTER" GridPane.rowIndex="5" GridPane.valignment="CENTER">
+                                       <graphic>
+                                          <ImageView fitHeight="30.0" fitWidth="30.0">
+                                             <image>
+                                                <Image url="@../../../resources/增加.png" />
+                                             </image>
+                                          </ImageView>
+                                       </graphic>
+                                    </Button>
+                                    <Button fx:id="warngoods" disable="true" mnemonicParsing="false" onAction="#warninglist" onMouseEntered="#buttonEnterEffect" onMouseExited="#buttonExitEffect" onMousePressed="#buttonPressEffect" style="-fx-background-color: null;" GridPane.halignment="CENTER" GridPane.rowIndex="9" GridPane.valignment="CENTER">
+                                       <graphic>
+                                          <ImageView fitHeight="40.0" fitWidth="40.0">
+                                             <image>
+                                                <Image url="@../../../resources/库存报警单.png" />
+                                             </image>
+                                          </ImageView>
+                                       </graphic>
+                                       <tooltip>
+                                          <Tooltip text="库存报警单" />
+                                       </tooltip></Button>
+                                    <Button fx:id="overflowgoods" disable="true" mnemonicParsing="false" onAction="#overflowlist" onMouseEntered="#buttonEnterEffect" onMouseExited="#buttonExitEffect" onMousePressed="#buttonPressEffect" style="-fx-background-color: null;" GridPane.halignment="CENTER" GridPane.rowIndex="11" GridPane.valignment="CENTER">
+                                       <tooltip>
+                                          <Tooltip text="库存报溢单" />
+                                       </tooltip>
+                                       <graphic>
+                                          <ImageView fitHeight="40.0" fitWidth="40.0">
+                                             <image>
+                                                <Image url="@../../../resources/库存报溢单.png" />
+                                             </image>
+                                          </ImageView>
+                                       </graphic>
+                                    </Button>
+                                    <Button fx:id="damagegoods" disable="true" mnemonicParsing="false" onAction="#damagelist" onMouseEntered="#buttonEnterEffect" onMouseExited="#buttonExitEffect" onMousePressed="#buttonPressEffect" style="-fx-background-color: null;" GridPane.halignment="CENTER" GridPane.rowIndex="13" GridPane.valignment="CENTER">
+                                       <tooltip>
+                                          <Tooltip text="库存报损单" />
+                                       </tooltip>
+                                       <graphic>
+                                          <ImageView fitHeight="40.0" fitWidth="40.0">
+                                             <image>
+                                                <Image url="@../../../resources/库存报损单.png" />
+                                             </image>
+                                          </ImageView>
+                                       </graphic>
+                                    </Button>
+                                    <Button fx:id="giftgoods" disable="true" mnemonicParsing="false" onAction="#giftlist" onMouseEntered="#buttonEnterEffect" onMouseExited="#buttonExitEffect" onMousePressed="#buttonPressEffect" style="-fx-background-color: null;" GridPane.halignment="CENTER" GridPane.rowIndex="15" GridPane.valignment="CENTER">
+                                       <tooltip>
+                                          <Tooltip text="库存赠送单" />
+                                       </tooltip>
+                                       <graphic>
+                                          <ImageView fitHeight="40.0" fitWidth="40.0">
+                                             <image>
+                                                <Image url="@../../../resources/商品赠送单.png" />
+                                             </image>
+                                          </ImageView>
+                                       </graphic>
+                                    </Button>
+                                 </children>
+                              </GridPane>
+                              <TreeTableView fx:id="goodstreetable" layoutX="-4.0" prefHeight="601.0" prefWidth="1038.0" stylesheets="@../TableViewCSS.css">
+                                <columns>
+                                  <TreeTableColumn fx:id="nameCol" prefWidth="166.0" text="商品名" />
+                                    <TreeTableColumn fx:id="idCol" prefWidth="132.0" text="商品ID" />
+                                    <TreeTableColumn fx:id="versionCol" prefWidth="82.0" text="型号" />
+                                    <TreeTableColumn fx:id="amountCol" prefWidth="112.0" text="库存数量" />
+                                    <TreeTableColumn fx:id="catagoryCol" prefWidth="120.0" text="叶节点分类" />
+                                    <TreeTableColumn fx:id="bidCol" prefWidth="85.0" text="进价" />
+                                    <TreeTableColumn fx:id="retailPriceCol" prefWidth="86.0" text="零售价" />
+                                    <TreeTableColumn fx:id="recentBidCol" prefWidth="85.0" text="最近进价" />
+                                    <TreeTableColumn fx:id="recentretailPriceCol" prefWidth="85.0" text="最近零售" />
+                                    <TreeTableColumn fx:id="warningamountCol" text="警戒数量" />
+                                </columns>	
+                              </TreeTableView>
+                           </children></AnchorPane>
+                  </content>
+                </Tab>
+                <Tab fx:id="tableinfo" text="商品列表">
+                  <content>
+                    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                           <children>
+                              <TableView fx:id="goodstable" layoutY="-3.0" prefHeight="606.0" prefWidth="1121.0" stylesheets="@../TableViewCSS.css">
+                                <columns>
+                                  <TableColumn fx:id="idColumn" prefWidth="150.0" text="编号/ID" />
+                                  <TableColumn fx:id="nameColumn" prefWidth="120.0" text="名称" />
+                                    <TableColumn fx:id="versionColumn" prefWidth="100.0" text="型号" />
+                                    <TableColumn fx:id="amountColumn" prefWidth="112.0" text="库存数量" />
+                                    <TableColumn fx:id="catagoryColumn" prefWidth="140.0" text="叶节点分类" />
+                                    <TableColumn fx:id="bidColumn" prefWidth="110.0" text="进价" />
+                                    <TableColumn fx:id="retailpriceColumn" prefWidth="110.0" text="零售价" />
+                                    <TableColumn fx:id="recentbidColumn" minWidth="0.0" prefWidth="120.0" text="最近进价" />
+                                    <TableColumn fx:id="recentretailpriceColumn" minWidth="0.0" prefWidth="138.0" text="最近零售价" />
+                                </columns>
+                              </TableView>
+                           </children></AnchorPane>
+                  </content>
+                </Tab>
+              </tabs>
+            </TabPane>
+            <AnchorPane prefHeight="57.0" prefWidth="1120.0" style="-fx-background-color: white;">
+               <children>
+                  <TextField fx:id="searchkeyword" layoutX="129.0" layoutY="7.0" onKeyPressed="#search" prefHeight="37.0" prefWidth="202.0" />
+                  <ComboBox fx:id="searchkeytype" layoutX="6.0" layoutY="7.0" prefHeight="37.0" prefWidth="119.0" style="-fx-background-color: null;" value="商品名称">
+                       <items>
+                         	 <FXCollections fx:factory="observableArrayList">
+                              <String fx:value="商品名称" />
+                             <String fx:value="商品ID" />
+                          	</FXCollections>
+                      	</items>
+                  </ComboBox>
+                  <Button layoutX="338.0" layoutY="11.0" mnemonicParsing="false" onAction="#refresh" onMouseEntered="#buttonEnterEffect" onMouseExited="#buttonExitEffect" onMousePressed="#buttonPressEffect" style="-fx-background-color: null;">
+                     <graphic>
+                        <ImageView fitHeight="25.0" fitWidth="25.0">
+                           <image>
+                              <Image url="@../../../resources/刷新.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+               </children>
+            </AnchorPane>
+         </children></AnchorPane>
+   </children>
+</GridPane>

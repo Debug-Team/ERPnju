@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+<?import com.jfoenix.controls.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.collections.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="650.0" prefWidth="1020.0" style="-fx-background-color: null;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="main.Presentation.StockManagerUI.GoodsManageDetail.GoodsAddFrame">
+   <children>
+      <AnchorPane layoutX="90.0" layoutY="83.0" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="912.0" style="-fx-background-color: rgb(224,103,103);">
+         <children>
+            <Label layoutX="48.0" layoutY="53.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="37.0" prefWidth="112.0" text="商品ID：">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+            <TextField fx:id="id" editable="false" layoutX="160.0" layoutY="51.0" prefHeight="41.0" prefWidth="269.0" style="-fx-background-color: null;">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </TextField>
+            <Label layoutX="48.0" layoutY="143.0" prefHeight="37.0" prefWidth="101.0" text="商品名称：">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+            <TextField fx:id="name" layoutX="149.0" layoutY="141.0" prefHeight="41.0" prefWidth="269.0" style="-fx-background-color: null;">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </TextField>
+            <Button layoutX="573.0" layoutY="386.0" mnemonicParsing="false" onAction="#goodsaddsure" onMouseEntered="#buttonEnterEffect" onMouseExited="#buttonExitEffect" onMousePressed="#buttonPressEffect" prefHeight="66.0" prefWidth="112.0" style="-fx-background-color: null;" text="确认">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Button>
+            <Button layoutX="727.0" layoutY="386.0" mnemonicParsing="false" onAction="#canceladd" onMouseEntered="#buttonEnterEffect" onMouseExited="#buttonExitEffect" onMousePressed="#buttonPressEffect" prefHeight="66.0" prefWidth="118.0" style="-fx-background-color: null;" text="取消">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Button>
+            <Line endY="487.0" layoutX="456.0" layoutY="14.0" startY="-13.0" />
+            <TextField fx:id="version" layoutX="149.0" layoutY="246.0" prefHeight="41.0" prefWidth="269.0" style="-fx-background-color: null;">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </TextField>
+            <Label layoutX="48.0" layoutY="248.0" prefHeight="37.0" prefWidth="101.0" text="商品型号：">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+            <Label layoutX="48.0" layoutY="347.0" prefHeight="37.0" prefWidth="101.0" text="库存数量：">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+            <TextField fx:id="amount" editable="false" layoutX="149.0" layoutY="345.0" prefHeight="41.0" prefWidth="118.0" style="-fx-background-color: null;" text="0">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </TextField>
+            <Label layoutX="500.0" layoutY="53.0" prefHeight="37.0" prefWidth="74.0" text="进价：">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+            <TextField fx:id="bid" layoutX="612.0" layoutY="51.0" prefHeight="41.0" prefWidth="269.0" style="-fx-background-color: null;">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </TextField>
+            <TextField fx:id="retailprice" layoutX="612.0" layoutY="123.0" prefHeight="41.0" prefWidth="269.0" style="-fx-background-color: null;">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </TextField>
+            <Label layoutX="500.0" layoutY="125.0" prefHeight="37.0" prefWidth="84.0" text="零售价：">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+            <Label layoutX="500.0" layoutY="207.0" prefHeight="37.0" prefWidth="101.0" text="最近进价：">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+            <TextField fx:id="recentbid" editable="false" layoutX="612.0" layoutY="205.0" prefHeight="41.0" prefWidth="269.0" style="-fx-background-color: null;">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </TextField>
+            <TextField fx:id="recentretailprice" editable="false" layoutX="612.0" layoutY="285.0" prefHeight="41.0" prefWidth="269.0" style="-fx-background-color: null;">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </TextField>
+            <Label layoutX="500.0" layoutY="287.0" prefHeight="37.0" prefWidth="127.0" text="最近零售价：">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+            <TextField fx:id="catagory" editable="false" layoutX="152.0" layoutY="411.0" prefHeight="41.0" prefWidth="118.0" style="-fx-background-color: null;">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </TextField>
+            <Label layoutX="51.0" layoutY="413.0" prefHeight="37.0" prefWidth="101.0" text="分类名称：">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <ImageView fitHeight="200.0" fitWidth="200.0">
+         <image>
+            <Image url="@../../../../resources/增加.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

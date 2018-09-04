@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<hibernate-configuration>
+    <session-factory>
+        <!--驱动路径注意数据库类型  -->
+        <property name="connection.driver_class">com.mysql.jdbc.Driver</property>
+        <!--数据库路径  -->
+        <property name="connection.url">jdbc:mysql://47.100.14.24:3306/TS?useSSL=false</property>
+        <!--数据库用户名  -->
+        <property name="connection.username">root</property>
+        <!--数据库密码  -->
+        <property name="connection.password">DebugTeam</property>
+        <!--方言，便于hibernate对象操作转化为合适的数据库语句  -->
+        <property name="dialect">org.hibernate.dialect.MySQLDialect</property>
+        <!--是否显示sql语句，sql一般会很难看  默认为false-->
+        <property name="hibernate.show_sql">false</property>
+        <!--下一个层级的映射文件，用来配置bean对象与数据表之间的关系  -->
+        <!-- javaBean对象 属性为private,有get、set方法，有无参构造函数 -->
+        <mapping resource="ClassMap2.xml"/>
+    </session-factory>
+</hibernate-configuration>
